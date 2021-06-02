@@ -1,0 +1,31 @@
+-- Adrian Haro
+-- CS 325 Fall 2019
+-- 11/16/2019
+
+Nutr(NUTR_ID, nutr_lname, nutr_fname)
+
+ClientP(CLI_ID, cli_lname, cli_fname)
+
+Cli_Email(CLI_ID, EMAIL_ID)
+	foreign key(cli_id) references ClientP
+
+Consultation(NUTR_ID, CLI_ID, cons_date)
+	foreign key(cli_id) references ClientP
+	foreign key(nutr_id) references Nutr
+	
+Consul_Symptoms(NUTR_ID, CLI_ID, CLI_SYMP)
+	foreign key(cli_id) references ClientP
+        foreign key(nutr_id) references Nutr
+
+
+Perscription(NUTR_ID, CLI_ID, drug_id, drug_name, persc_date)
+        foreign key(cli_id) references ClientP
+        foreign key(nutr_id) references Nutr
+	foreign key(drug_id) references Drug
+
+
+Drug(DRUG_ID,drug_cost, drug_name,drug_type)
+
+Drug_Purchase(DRUG_ID, CLI_ID, drug_amt, amt_spnt)
+	foreign key(drug_id) references Drug
+	foreign key(cli_id) references ClientP

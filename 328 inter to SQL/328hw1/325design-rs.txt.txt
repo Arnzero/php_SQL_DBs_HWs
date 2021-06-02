@@ -1,0 +1,33 @@
+-- Jesse Garcia
+-- CS 325 - Fall 2019
+-- Dec - 12 - 2019
+
+
+employee (EMPLOYEE_ID, date_hired, position)
+
+
+oil_change (CUSTOMER_ID, EMPLOYEE_ID, oil_change_date, oil_type, oil_change_id)
+foreign key (employee_id) references employee
+foreign key (customer_id) references customer
+
+
+car (customer_id, make, year, model, car_id)
+foreign key (customer_id) references customer
+
+
+customer (CUSTOMER_ID, cus_addre, cus_phone)
+
+
+check_out (TOOL_ID, date_out, date_in)
+foreign key (tool_id) references from tools
+
+
+tools (TOOL_ID)
+
+
+manger (date promoted, manager_salary, employee_id)
+Foreign key (employee_id) references from employee
+
+
+mechanic (mechanic_salary, employee_id)
+Foreign key (employee_id) references from employee

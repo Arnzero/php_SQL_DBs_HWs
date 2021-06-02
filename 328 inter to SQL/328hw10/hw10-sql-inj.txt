@@ -1,0 +1,28 @@
+Adrian Haro
+4/29/2020
+
+
+Sanitize the input:
+	We filter everything but acceptable data but it
+	gets complex with special chars.
+
+	We can test for sql vulnerabilities by using a quote.	
+
+Use bound parameters:
+	We can parse and inject values into an sql statement
+	to reduce the chance of altering the string.
+
+Isolate the webserver:
+	Design the network infrastructe to assume that the
+	bad guy will have full admin access to machine
+
+Query in,data out:
+	Let's do one query at a time 
+	Can avoid data exfiltration by
+	having logic that checks if 
+	expected single row but returned multiple
+	rows or only display first row always
+
+side note:
+SELECT * FROM orders WHERE orderid=CONVERT(int, db_name())
+might reveal table name depending on debug protocols

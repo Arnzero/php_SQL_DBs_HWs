@@ -1,0 +1,19 @@
+--Adrian Haro
+--11/7/2019
+
+(partial database)
+
+Member(MEM_NUM,last_name,date_joined, parking_id_num)
+foreign key(parking_id_num) references Parking_Space
+
+Email(MEM_NUM, EMAIL_NUM)
+foreign key (MEM_NUM) references Member
+
+Parking_Space(PARK_ID_NUM, garage_name, section_num, space_num)
+
+Seminar(SEM_NUM, title, sem_date, time_begin, time_end, mem_num)
+foreign key(mem_num) references Member
+
+Mem_Sem_Sign_ups(MEM_NUM,SEM_NUM)
+	foreign key(mem_num) references Member
+	foreign key(sem_num) references Member

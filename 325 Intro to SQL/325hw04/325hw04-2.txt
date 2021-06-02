@@ -1,0 +1,47 @@
+--Adrian Haro
+--CS 325 - Homework 4 - Problem 2
+--Last Modified
+
+--2 part a; relational projection by hand
+  Video =
+  Vid_format	Vid_purchase_date
+  -------------------------------
+  DVD		11-JAN-2018
+  HD-DVD	22-FEB-2019
+  BluRay	03-MAR-2017
+  HD-DVD	22-FEB-2019
+  BluRay	04-APR-2015
+
+--2 part b; relational selection
+  Video =
+  Vid_id	Vid_format	Vid_purchase_date	Vid_rental_price	Vid_length
+  -------------------------------------------------------------------------------------------------
+  22222B	BluRay		03-MAR-2017		1.99			105
+  44444B	BluRay		04-APR-2015		0.99			91
+
+--2 part c; Cartesian Product
+    5 Client Rows * 7 Rental Rows = 35 relational rows
+
+--2 part d; relational natural join
+  Client and Rental, condition: Client.Cli_id = Rental.Cli_id
+  Client=
+
+  Cli_id	Cli_lname	Cli_fname	Cli_phone
+  -------------------------------------------------------	  
+  000A		Alpha		Ann		000-0001
+  111B		Beta		Bob		111-1112
+  222B		Beta		Ann		222-2223
+  333C		Carlos		David		111-1112
+
+--2 part e; single relation & only attributes
+	We can use "Equi-join" algebra.
+
+--2 part f; relation w/ just Client's last & phone number
+	We can use "Projection".
+
+--2 part g; Video attributes where rental price > 2.00
+	We can use "Selection".
+
+--2 part h; relate attributes: Video.Vid_id, Rental.Vid_id etc.
+	We can use "Natural-join".
+   

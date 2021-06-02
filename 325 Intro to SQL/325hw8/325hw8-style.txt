@@ -1,0 +1,26 @@
+--Adrian Haro
+--11/3/2019
+
+-- Problem 3a
+"THOU SHALT only use an ORDER BY clause for an outermost SELECT
+	(not within any sub-select), and it shall be indented
+	 to make clear that it (belongs) to the outermost SELECT."
+
+-- Problem 3b
+"THOU SHALT only use a GROUP BY clause when one has a good reason
+	(usually a computation that you wish done to those groups."
+
+-- Problem 3c
+"THOU SHALT surround each nested SELECT statement with a set of 
+	parenthesis()."
+"THOU SHALT indent nested SELECT statements by at least 3 spaces."
+
+-- Problem 3d
+"When using EXISTS or NOT EXISTS
+ 	- its sub-select argument is EXPECTED to include an
+		appropriate correlation condition
+	- its sub-select argument is EXPECTED to project a literal
+		(since there predicates only (care) if any rows
+		 exist in that sub-select's results, NOT those rows'
+		 contents, and why bother doing much work
+		 projecting those contents)"

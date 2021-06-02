@@ -1,0 +1,263 @@
+Homework 11 Problem 3
+Adrian Haro
+Problem 3-1
+
+View dropped.
+
+
+View created.
+
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000001 5555 120011 Saturday                                                    
+Monday                               Sunday                                     
+                                                                                
+0000002 2222 130031 Thursday                                                    
+Sunday                                                                          
+                                                                                
+0000003 2222 130012 Tuesday                                                     
+Sunday                               Wednesday                                  
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000004 3333 130012 Saturday                                                    
+Sunday                                                                          
+                                                                                
+0000005 3333 210011 Thursday                                                    
+Sunday                                                                          
+                                                                                
+0000007 3333 120011 Sunday                                                      
+Wednesday                            Saturday                                   
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000008 1111 130022 Wednesday                                                   
+Saturday                             Saturday                                   
+                                                                                
+0000009 6666 130012 Friday                                                      
+Monday                               Monday                                     
+                                                                                
+0000010 7777 120011 Saturday                                                    
+Tuesday                              Tuesday                                    
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000011 8888 230012 Thursday                                                    
+Tuesday                                                                         
+                                                                                
+0000012 9999 210031 Tuesday                                                     
+Friday                               Friday                                     
+                                                                                
+0000013 9999 210041 Tuesday                                                     
+Friday                               Friday                                     
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000014 9999 230033 Tuesday                                                     
+Friday                               Friday                                     
+                                                                                
+0000015 3333 420011 Sunday                                                      
+Wednesday                            Tuesday                                    
+                                                                                
+0000016 2222 330023 Wednesday                                                   
+Monday                               Sunday                                     
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000017 5555 220013 Sunday                                                      
+Wednesday                                                                       
+                                                                                
+0000018 1111 220062 Saturday                                                    
+Thursday                                                                        
+                                                                                
+0000019 3333 320032 Friday                                                      
+Monday                               Saturday                                   
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000020 7777 130031 Thursday                                                    
+Sunday                               Monday                                     
+                                                                                
+0000021 6666 210011 Sunday                                                      
+Tuesday                                                                         
+                                                                                
+0000022 5555 210031 Monday                                                      
+Wednesday                            Tuesday                                    
+                                                                                
+
+RENTAL_ CLIE VID_ID DAY_OUT                                                     
+------- ---- ------ ------------------------------------                        
+DAY_DUE                              DAY_RETURNED                               
+------------------------------------ ------------------------------------       
+0000023 4444 120011 Monday                                                      
+Wednesday                            Saturday                                   
+                                                                                
+0000024 7777 130031 Sunday                                                      
+Tuesday                              Monday                                     
+                                                                                
+
+23 rows selected.
+
+Problem 3-2
+
+RENTAL_ CLIE VID_ID DAY_OUT   DAY_DUE   DAY_RETUR                               
+------- ---- ------ --------- --------- ---------                               
+0000001 5555 120011 Saturday  Monday    Sunday                                  
+0000002 2222 130031 Thursday  Sunday                                            
+0000003 2222 130012 Tuesday   Sunday    Wednesday                               
+0000004 3333 130012 Saturday  Sunday                                            
+0000005 3333 210011 Thursday  Sunday                                            
+0000007 3333 120011 Sunday    Wednesday Saturday                                
+0000008 1111 130022 Wednesday Saturday  Saturday                                
+0000009 6666 130012 Friday    Monday    Monday                                  
+0000010 7777 120011 Saturday  Tuesday   Tuesday                                 
+0000011 8888 230012 Thursday  Tuesday                                           
+0000012 9999 210031 Tuesday   Friday    Friday                                  
+
+RENTAL_ CLIE VID_ID DAY_OUT   DAY_DUE   DAY_RETUR                               
+------- ---- ------ --------- --------- ---------                               
+0000013 9999 210041 Tuesday   Friday    Friday                                  
+0000014 9999 230033 Tuesday   Friday    Friday                                  
+0000015 3333 420011 Sunday    Wednesday Tuesday                                 
+0000016 2222 330023 Wednesday Monday    Sunday                                  
+0000017 5555 220013 Sunday    Wednesday                                         
+0000018 1111 220062 Saturday  Thursday                                          
+0000019 3333 320032 Friday    Monday    Saturday                                
+0000020 7777 130031 Thursday  Sunday    Monday                                  
+0000021 6666 210011 Sunday    Tuesday                                           
+0000022 5555 210031 Monday    Wednesday Tuesday                                 
+0000023 4444 120011 Monday    Wednesday Saturday                                
+
+RENTAL_ CLIE VID_ID DAY_OUT   DAY_DUE   DAY_RETUR                               
+------- ---- ------ --------- --------- ---------                               
+0000024 7777 130031 Sunday    Tuesday   Monday                                  
+
+23 rows selected.
+
+Problem 3-3
+Problem 3-4
+
+PURCHASE_DATE     MOVIE_TITLE                              FORMAT               
+----------------- ---------------------------------------- -------              
+Apr 2008          Babe                                     Blu-Ray              
+Apr 2008          Indiana Jones and the Last Crusade       Blu-Ray              
+Apr 2008          Indiana Jones and the Temple of Doom     Blu-Ray              
+Aug 2010          Return of the Jedi                       DVD                  
+Aug 2010          Star Wars                                DVD                  
+Aug 2010          The Empire Strikes Back                  DVD                  
+Dec 2011          The Phantom Menace                       Blu-Ray              
+Dec 2011          The Phantom Menace                       Blu-Ray              
+Dec 2011          The Phantom Menace                       Blu-Ray              
+Dec 2011          The Phantom Menace                       DVD                  
+Dec 2011          Toy Story 2                              Blu-Ray              
+
+PURCHASE_DATE     MOVIE_TITLE                              FORMAT               
+----------------- ---------------------------------------- -------              
+Dec 2011          Toy Story 2                              Blu-Ray              
+Feb 2011          Gone with the Wind                       DVD                  
+Feb 2011          The Muppet Movie                         DVD                  
+Jan 2010          Gone with the Wind                       Blu-Ray              
+Jan 2010          Indiana Jones and the Temple of Doom     DVD                  
+Jan 2010          The Blues Brothers                       DVD                  
+Jul 2008          Return of the Jedi                       Blu-Ray              
+Jul 2008          Star Wars                                Blu-Ray              
+Jul 2008          The Empire Strikes Back                  Blu-Ray              
+Jun 2009          Toy Story                                DVD                  
+Mar 2009          It's a Wonderful Life                    Blu-Ray              
+
+PURCHASE_DATE     MOVIE_TITLE                              FORMAT               
+----------------- ---------------------------------------- -------              
+Mar 2012          It's a Wonderful Life                    DVD                  
+Mar 2012          The Matrix                               Blu-Ray              
+Mar 2012          The Matrix                               Blu-Ray              
+Mar 2012          The Matrix                               DVD                  
+Mar 2012          The Matrix                               DVD                  
+May 2008          Fatal Attraction                         Blu-Ray              
+May 2008          Fatal Attraction                         HD-DVD               
+May 2008          Star Wars                                HD-DVD               
+May 2008          The Empire Strikes Back                  HD-DVD               
+May 2008          Toy Story                                Blu-Ray              
+May 2008          Toy Story                                Blu-Ray              
+
+PURCHASE_DATE     MOVIE_TITLE                              FORMAT               
+----------------- ---------------------------------------- -------              
+May 2009          Indiana Jones and the Temple of Doom     HD-DVD               
+May 2010          Babe                                     DVD                  
+May 2012          Toy Story 2                              DVD                  
+May 2012          Toy Story 2                              DVD                  
+Oct 2010          All About Eve                            Blu-Ray              
+Oct 2010          Clockwork Orange                         Blu-Ray              
+Oct 2010          Midnight Cowboy                          Blu-Ray              
+Oct 2010          One Flew Over the Cuckoo's Nest          Blu-Ray              
+Oct 2010          The Philadelphia Story                   Blu-Ray              
+
+42 rows selected.
+
+Problem 3-5
+
+CLIENT                           FIRST RENTAL                                   
+-------------------------------- ---------------------------------------------  
+Alpha, Ann                       September 04, 2019                             
+Beta, Bob                        September 03, 2019                             
+Beta, Edie                       September 16, 2019                             
+Carlos, Ann                      August    08, 2019                             
+Delta, David                     September 16, 2019                             
+Epsilon, Emma                    September 13, 2019                             
+Feta, Frank                      August    29, 2019                             
+Greta, Gail                      September 05, 2019                             
+Harpo, Harry                     September 10, 2019                             
+
+9 rows selected.
+
+Problem 3-6
+
+Trigger created.
+
+No errors.
+
+Commit complete.
+
+fired                                                                           
+insert into rental
+            *
+ERROR at line 1:
+ORA-20101: sorry  you can not rent this! 
+ORA-06512: at "AFH146.APPROVE_RENTAL", line 14 
+ORA-04088: error during execution of trigger 'AFH146.APPROVE_RENTAL' 
+
+
+fired                                                                           
+
+1 row created.
+
+
+1 row updated.
+
+fired                                                                           
+
+1 row created.
+
+
+Rollback complete.
+

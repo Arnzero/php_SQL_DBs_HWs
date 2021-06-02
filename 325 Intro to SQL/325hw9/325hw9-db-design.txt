@@ -1,0 +1,50 @@
+-- Adrian Haro
+-- 11/19/2019
+-- Problem 3-1
+
+Client(CLI_NUM, cli_email, cli_type)
+
+Client_OS(CLI_NUM,CLI_OS)
+	foreign key(cli_num) references Client
+
+Individ_client(CLI_NUM,individ_last_name, individ_first_name,
+		individ_ssn)
+	foreign key(cli_num) references Client
+
+Corp_client(CLI_NUM, corp_dba_name, corp_tax_id)
+        foreign key(cli_num) references Client
+
+Account(ACCT_NUM, acct_opening_date, acct_curr_balance,
+	acct_int_rate)
+
+Transaction(TRANS_NUM, trans_date, trans_amount, acct_num)
+	foreign key(acct_num) referenes Account
+
+Cli_Acc(CLI_NUM,ACC_NUM)
+	foreign key(cli_num) references Client
+	foreign key(acc_num) references Account
+
+
+Problem 3-2
+
+Donation(DON_NUM, don_date, don_amount, booster_num)
+	foreign key(booster_num) references Booster
+
+Booster(BOOSTER_NUM, booster_lname, booster_fname,
+	booster_email, is_parent, is_alum, is_friend)
+
+Student(STU_ID, stu_lname, stu_fname, stu_grade,
+	stu_gpa)
+
+Parent(BOOSTER_NUM,vol_hrs, prefd_phone)
+        foreign key(booster_num) references Booster
+
+Alum(BOOSTER_NUM, year_left)
+        foreign key(booster_num) references Booster
+
+Friend(BOOSTER_NUM, year_joined)
+	foreign key(booster_num) references Booster
+
+Guardian(STU_ID, BOOSTER_NUM)
+	foreign key(stu_id) references Student
+	foreign key(booster_num) references Parent

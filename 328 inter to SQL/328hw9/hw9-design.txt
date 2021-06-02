@@ -1,0 +1,12 @@
+Adrian Haro
+4/22/2020
+
+Three rules-of-thumb that a web designer should know
+- Keep each page's text short
+- Put the most important content at the top of the page
+- Choose fonts and font sizes carefully
+
+Three more rules-of-thumb that a web designer should know
+- Write alternative text for your images and non-text content
+- Provide search if the site has more than 100 pages
+- Users do not read, they are skimmers, google is precious

@@ -1,0 +1,19 @@
+Adrian Haro
+bool_to_string(TRUE) should return TRUE
+
+PL/SQL procedure successfully completed.
+
+
+RESULT                                                                          
+--------------------------------                                                
+TRUE                                                                            
+
+bool_to_string(FALSE) should return FALSE
+
+PL/SQL procedure successfully completed.
+
+
+RESULT2                                                                         
+--------------------------------                                                
+FALSE                                                                           
+

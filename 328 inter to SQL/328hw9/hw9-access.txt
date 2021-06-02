@@ -1,0 +1,38 @@
+Adrian Haro
+4/22/2020
+
+Desiginging for accessiblity is not that hard!
+
+
+Three rules-of-thumb are:
+- Support keyboard navigation
+	-- people use screen readers
+	-- make it more accessible than selecting links
+
+- Don't use color alone to make critical information understandable
+	-- use text labels or patterns to highlight
+	-- print your graph in black and white
+
+- Use correct markup on your content
+	-- Headings establish hierarchy of the content of page
+	-- Titles with big font sizes help a reader understand 
+		hierarchy
+ 
+Three rules-of-thumb from teach access:
+
+- html tabular tables are better for screen readers
+	--do not use CSS to make a table for its uselss for A.R.I.A.
+	--is every element forcusable with a keyboard
+
+- Text size
+	-- allowing 200% zoom w/0 content loss
+	-- increase text without overlap or truncated text
+	-- in mobile don't disable pinch and zoom
+
+- Copy Writing
+	-- avoid directional language like "below" and "left/right"
+	-- use alt text for images
+	-- provide explanatory and context-specific text where possible
+
+
+	

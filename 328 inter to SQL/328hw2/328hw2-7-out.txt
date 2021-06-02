@@ -1,0 +1,29 @@
+Adrian Haro
+
+Function created.
+
+No errors.
+testing if the year 2045 for a car is valid, expecting FALSE
+
+PL/SQL procedure successfully completed.
+
+
+CHECK_CAR_YR_MANU                                                               
+--------------------------------                                                
+FALSE                                                                           
+
+Check if this is a returning or new guest
+
+
+Function created.
+
+No errors.
+var testNewGuest should be false, since it's returning guest
+
+PL/SQL procedure successfully completed.
+
+
+TESTNEWGUEST                                                                    
+--------------------------------                                                
+FALSE                                                                           
+

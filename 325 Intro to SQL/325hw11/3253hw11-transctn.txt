@@ -1,0 +1,49 @@
+--Adrian Haro
+--12/8/19
+
+Problem 2-1
+If the DBMS were not to permit one of these transactiosn to perform 
+a desired action, it would rollback that transaction.
+Ti would be aborted, rescheduled and assigned a new timestamp.
+
+
+Problem 2-2
+TS(T1) = 18, R-TS(A) = 8, W-TS(A) = 7.
+Since T1 > R and W TS's.
+T1 action will be performed
+R-ts(A) = 8.
+W-ts(A) = 18.
+
+Problem 2-3
+W-TS(T2) = 19, R-ts(B) = 22, W-ts(B)= 21.
+T2 action will not be performed, it will be aborted and 
+rescheduled with a a new time stamp.
+R-ts(B) = 22
+W-ts(B) = 21
+TS(T2) = 23+
+
+Problem 2-4
+R-TS(T3) = 13
+R-ts(C) = 17
+W-ts(C) = 12
+T3 > W, so T3 is performed and R-ts is updated with max(Ti or R-ts() ).
+R-ts(C) = 17
+
+
+Problem 2-5
+R-TS(T4) = 24
+R-ts(D) = 12
+W-ts(D) = 29
+T4 < W-ts so action is rejected, aborted, rolled back and rescheduled
+R-ts(D) = 12
+W-ts(D) = 29
+
+Problem 2-6
+W-TS(T5) = 18
+R-ts(E) = 20
+W-ts(E) = 16.
+T5 < R-ts so action is rejected, aborted, rolled back and rescheduled
+R-ts(E) = 20
+W-ts(E) = 16.
+
+

@@ -1,0 +1,353 @@
+Homework 8 - Problem 6
+Adrian Haro
+6-2 displaying client credit rating increasing order
+
+CLIE CLIENT_LNAME    CLIENT_FNAME    CLIENT_P CLIENT_CREDIT_RTG CLI             
+---- --------------- --------------- -------- ----------------- ---             
+7777 Feta            Frank           777-7777                 0 500             
+2222 Beta            Bob             222-2222               1.2 200             
+6666 Epsilon         Emma            666-6666               2.1 400             
+9999 Harpo           Harry           999-9999               3.3 100             
+4444 Delta           David           222-2222               3.4 400             
+3333 Carlos          Ann             333-3333               3.8 300             
+8888 Greta           Gail            888-8888               4.4 200             
+1111 Alpha           Ann             111-1111               4.9 100             
+5555 Beta            Edie            555-5555                 5                 
+
+9 rows selected.
+
+
+CLIE CLIENT_LNAME    CLIENT_FNAME    CLIENT_P CLIENT_CREDIT_RTG CLI             
+---- --------------- --------------- -------- ----------------- ---             
+5555 Beta            Edie            555-5555                 5                 
+1111 Alpha           Ann             111-1111               4.9 100             
+8888 Greta           Gail            888-8888               4.4 200             
+3333 Carlos          Ann             333-3333               3.8 300             
+4444 Delta           David           222-2222               3.4 400             
+9999 Harpo           Harry           999-9999               3.3 100             
+6666 Epsilon         Emma            666-6666               2.1 400             
+2222 Beta            Bob             222-2222               1.2 200             
+7777 Feta            Frank           777-7777                 0 500             
+
+9 rows selected.
+
+prompt 6-3
+
+Movie: Rating                                                                   
+-----------------------------------------------                                 
+Clockwork Orange: A                                                             
+Midnight Cowboy: A                                                              
+All About Eve: G                                                                
+Babe: G                                                                         
+Gone with the Wind: G                                                           
+It's a Wonderful Life: G                                                        
+The Muppet Movie: G                                                             
+The Philadelphia Story: G                                                       
+Toy Story: G                                                                    
+Toy Story 2: G                                                                  
+Indiana Jones and the Temple of Doom: PG                                        
+
+Movie: Rating                                                                   
+-----------------------------------------------                                 
+Return of the Jedi: PG                                                          
+Star Wars: PG                                                                   
+The Empire Strikes Back: PG                                                     
+The Phantom Menace: PG                                                          
+Indiana Jones and the Last Crusade: PG-13                                       
+Fatal Attraction: R                                                             
+One Flew Over the Cuckoo's Nest: R                                              
+The Blues Brothers: R                                                           
+The Matrix: R                                                                   
+
+20 rows selected.
+
+6-4
+
+CATEGORY_N MOVIE_TITLE                              MOVIE                       
+---------- ---------------------------------------- -----                       
+Drama      Midnight Cowboy                          A                           
+Drama      Clockwork Orange                         A                           
+Classic    Gone with the Wind                       G                           
+Classic    The Philadelphia Story                   G                           
+Classic    It's a Wonderful Life                    G                           
+Classic    All About Eve                            G                           
+Family     Toy Story                                G                           
+Family     Babe                                     G                           
+Family     Toy Story 2                              G                           
+Family     The Muppet Movie                         G                           
+Action     The Phantom Menace                       PG                          
+
+CATEGORY_N MOVIE_TITLE                              MOVIE                       
+---------- ---------------------------------------- -----                       
+Action     Return of the Jedi                       PG                          
+Action     Star Wars                                PG                          
+Action     Indiana Jones and the Temple of Doom     PG                          
+Action     The Empire Strikes Back                  PG                          
+Action     Indiana Jones and the Last Crusade       PG-13                       
+Comedy     The Blues Brothers                       R                           
+Action     The Matrix                               R                           
+Drama      Fatal Attraction                         R                           
+Drama      One Flew Over the Cuckoo's Nest          R                           
+
+20 rows selected.
+
+6-5
+
+CLIENT_LNAME    CLIENT_P CLIENT_CREDIT_RTG                                      
+--------------- -------- -----------------                                      
+Epsilon         666-6666               2.1                                      
+Beta            222-2222               1.2                                      
+Feta            777-7777                 0                                      
+
+6-6
+
+VID_FOR        QTY AVG(VID_RENTAL_PRICE)                                        
+------- ---------- ---------------------                                        
+Blu-Ray         23                  2.39                                        
+DVD             15            4.85666667                                        
+HD-DVD           4                  1.14                                        
+
+6-7
+
+VID_RENTAL_PRICE   QUANTITY                                                     
+---------------- ----------                                                     
+            5.99          6                                                     
+            4.99          3                                                     
+            3.99          5                                                     
+            2.99          8                                                     
+            2.19          6                                                     
+            1.99         10                                                     
+            1.29          2                                                     
+             .99          2                                                     
+
+8 rows selected.
+
+6-8
+
+VID_RENTAL_PRICE   QUANTITY                                                     
+---------------- ----------                                                     
+            5.99          6                                                     
+            2.99          8                                                     
+            2.19          6                                                     
+            1.99         10                                                     
+
+6-9
+
+MOVIE_TITLE                                                                     
+----------------------------------------                                        
+Babe                                                                            
+Gone with the Wind                                                              
+It's a Wonderful Life                                                           
+The Muppet Movie                                                                
+Toy Story                                                                       
+Toy Story 2                                                                     
+
+6 rows selected.
+
+6-10
+
+MOVIE_TITLE                                                                     
+----------------------------------------                                        
+The Philadelphia Story                                                          
+The Matrix                                                                      
+The Blues Brothers                                                              
+Return of the Jedi                                                              
+Midnight Cowboy                                                                 
+Indiana Jones and the Last Crusade                                              
+Fatal Attraction                                                                
+Clockwork Orange                                                                
+Babe                                                                            
+All About Eve                                                                   
+
+10 rows selected.
+
+6-11
+
+VID_ID VID_RENTAL_PRICE                                                         
+------ ----------------                                                         
+230064             5.99                                                         
+230073             5.99                                                         
+230074             5.99                                                         
+330033             5.99                                                         
+330034             5.99                                                         
+230043             3.99                                                         
+230052             3.99                                                         
+330012             3.99                                                         
+220061             2.99                                                         
+220063             2.99                                                         
+220071             2.99                                                         
+
+VID_ID VID_RENTAL_PRICE                                                         
+------ ----------------                                                         
+220072             2.99                                                         
+320031             2.99                                                         
+220021             2.19                                                         
+420021             2.19                                                         
+420031             2.19                                                         
+420042             2.19                                                         
+120021             1.99                                                         
+120041             1.99                                                         
+120051             1.99                                                         
+130061             1.99                                                         
+220032             1.99                                                         
+
+VID_ID VID_RENTAL_PRICE                                                         
+------ ----------------                                                         
+220042             1.99                                                         
+220051             1.99                                                         
+320011             1.99                                                         
+320021             1.99                                                         
+320022             1.99                                                         
+210041             1.29                                                         
+410041             1.29                                                         
+210011              .99                                                         
+210031              .99                                                         
+
+31 rows selected.
+
+6-12  !!
+
+VID_ID NUM_RENTALS                                                              
+------ -----------                                                              
+120011           4                                                              
+130031           3                                                              
+130012           3                                                              
+210011           2                                                              
+210031           2                                                              
+320032           1                                                              
+220013           1                                                              
+130022           1                                                              
+220062           1                                                              
+330023           1                                                              
+230012           1                                                              
+
+VID_ID NUM_RENTALS                                                              
+------ -----------                                                              
+230033           1                                                              
+420011           1                                                              
+210041           1                                                              
+220042           0                                                              
+220051           0                                                              
+220061           0                                                              
+220062           0                                                              
+220063           0                                                              
+220071           0                                                              
+220072           0                                                              
+230012           0                                                              
+
+VID_ID NUM_RENTALS                                                              
+------ -----------                                                              
+230033           0                                                              
+230043           0                                                              
+230052           0                                                              
+230064           0                                                              
+230073           0                                                              
+230074           0                                                              
+320011           0                                                              
+320021           0                                                              
+320022           0                                                              
+320031           0                                                              
+320032           0                                                              
+
+VID_ID NUM_RENTALS                                                              
+------ -----------                                                              
+330012           0                                                              
+330023           0                                                              
+330033           0                                                              
+330034           0                                                              
+410041           0                                                              
+420011           0                                                              
+420021           0                                                              
+420031           0                                                              
+420042           0                                                              
+220021           0                                                              
+220013           0                                                              
+
+VID_ID NUM_RENTALS                                                              
+------ -----------                                                              
+210041           0                                                              
+210031           0                                                              
+210011           0                                                              
+130061           0                                                              
+130031           0                                                              
+130022           0                                                              
+130012           0                                                              
+120051           0                                                              
+120041           0                                                              
+120021           0                                                              
+120011           0                                                              
+
+VID_ID NUM_RENTALS                                                              
+------ -----------                                                              
+220032           0                                                              
+
+56 rows selected.
+
+6-13
+
+CLIENT_LNAME    CLIENT_CREDIT_RTG                                               
+--------------- -----------------                                               
+Feta                            0                                               
+Beta                          1.2                                               
+Epsilon                       2.1                                               
+Harpo                         3.3                                               
+Delta                         3.4                                               
+Carlos                        3.8                                               
+Greta                         4.4                                               
+Alpha                         4.9                                               
+Beta                            5                                               
+
+9 rows selected.
+
+updating..
+
+3 rows updated.
+
+
+CLIENT_LNAME    CLIENT_CREDIT_RTG                                               
+--------------- -----------------                                               
+Feta                            0                                               
+Beta                          1.2                                               
+Epsilon                       2.1                                               
+Harpo                         3.6                                               
+Delta                         3.7                                               
+Carlos                        4.2                                               
+Greta                         4.4                                               
+Alpha                         4.9                                               
+Beta                            5                                               
+
+9 rows selected.
+
+6-14 !!
+
+  COUNT(*)                                                                      
+----------                                                                      
+        42                                                                      
+
+deleting..
+
+28 rows deleted.
+
+
+VID_ID VID_FOR VID_PURCH VID_RENTAL_PRICE MOVIE                                 
+------ ------- --------- ---------------- -----                                 
+120011 Blu-Ray 11-JAN-10             2.99 10001                                 
+130012 DVD     22-FEB-11             4.99 10001                                 
+130022 DVD     04-MAR-12             5.99 10002                                 
+130031 DVD     22-FEB-11             4.99 10003                                 
+210011 HD-DVD  05-MAY-09              .99 20001                                 
+230012 DVD     01-JAN-10             3.99 20001                                 
+220013 Blu-Ray 05-APR-08             2.19 20001                                 
+330023 DVD     07-JUN-09             4.99 30002                                 
+320032 Blu-Ray 01-DEC-11             2.99 30003                                 
+210031 HD-DVD  05-MAY-08              .99 20003                                 
+230033 DVD     17-AUG-10             3.99 20003                                 
+
+VID_ID VID_FOR VID_PURCH VID_RENTAL_PRICE MOVIE                                 
+------ ------- --------- ---------------- -----                                 
+210041 HD-DVD  05-MAY-08             1.29 20004                                 
+220062 Blu-Ray 01-DEC-11             2.99 20006                                 
+420011 Blu-Ray 04-OCT-10             2.19 40001                                 
+
+14 rows selected.
+

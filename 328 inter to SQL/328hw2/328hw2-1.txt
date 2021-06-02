@@ -1,0 +1,24 @@
+--Adrian Haro
+-- 2/3/2020
+
+Problem 1-1
+@ hw-qs.sql
+
+Problem 1-2
+exec date_greet('Adrian')
+
+Problem 1-3
+ var quant integer
+ exec :quant :=empl_count
+ print quant
+ 
+Problem 1-4
+begin
+	exec date_greet('Adrian')
+end;
+
+Problem 1-5 
+begin
+	empl_count <> 18
+
+end;

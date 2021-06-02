@@ -1,0 +1,34 @@
+Misael and Adrian
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row deleted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+  PART_NUM PART_NAME                 QUANTITY_ON_HAND      PRICE LEV LAST_INSP  
+---------- ------------------------- ---------------- ---------- --- ---------  
+     10603 hexagonal wrench                       200       9.99 003 07-SEP-17  
+     10604 tire                                   287      39.99 333 06-SEP-18  
+     10605 hammer                                  30       9.99 003 01-SEP-18  
+     10606 3/8 in bolt                           5000        .03 005 04-SEP-18  
+
+
+ORDER_   CUST_NUM   PART_NUM ORDER_DAT   QUANTITY O D                           
+------ ---------- ---------- --------- ---------- - -                           
+500500    3548787      10603 13-MAY-16         20 B F                           
+637101    3548767      10605 23-FEB-19          2 I P                           
+123456    9876543      10606 13-DEC-16          1 G U                           
+

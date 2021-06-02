@@ -1,0 +1,59 @@
+Adrian Haro
+Problem 3a project 2 columns, name of pubs'
+and state of pubs' with alias in alphabetic order
+
+Published Name                 Published State                                  
+------------------------------ -------------------                              
+Addison-Wesley                 Reading, MA                                      
+Benjamin/Cummings              Menlo Park, CA                                   
+Irwin                          Homewood, IL                                     
+MacMillan                      Riverside, NJ                                    
+McGraw-Hill                    New York, NY                                     
+Merrill                        Columbus, OH                                     
+PWS                            Boston, MA                                       
+Prentice Hall                  Eaglewood Clfs, NJ                               
+Science Research Associates    Menlo Park, CA                                   
+The MIT Press                  Cambridge, MA                                    
+
+10 rows selected.
+
+Problem 3b
+
+TTL_NAME                                      TTL_PRICE                         
+--------------------------------------------- ---------                         
+BASIC: A Structured Approach                     $29.95                         
+Case Book for Data Base Management               $14.95                         
+Computer Science, An Overview                    $49.50                         
+Computers and Data Processing                    $34.95                         
+Data Base Management                             $37.95                         
+
+Problem 3c
+
+PUB_NAME                         # TITLES AVG PRICE                             
+------------------------------ ---------- ---------                             
+Science Research Associates             1    $28.95                             
+Irwin                                   1    $31.50                             
+Benjamin/Cummings                       5    $33.46                             
+Addison-Wesley                          4    $38.45                             
+PWS                                     2    $44.23                             
+Prentice Hall                           3    $44.98                             
+McGraw-Hill                             2    $51.98                             
+MacMillan                               1    $55.00                             
+The MIT Press                           1    $60.00                             
+
+9 rows selected.
+
+Problem 3d
+
+TTL_NAME                                      ORD_LINE_QTY                      
+--------------------------------------------- ------------                      
+Creating Effective Software                              3                      
+The C Programming Language                             100                      
+
+Problem 3e
+
+PUB_NAME                       ORD_LINE_QTY                                     
+------------------------------ ------------                                     
+Prentice Hall                           100                                     
+McGraw-Hill                             100                                     
+

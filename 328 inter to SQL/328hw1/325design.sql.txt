@@ -1,0 +1,82 @@
+-- Jesse Garcia
+-- CS 325 - Fall 2019
+-- Nov - 16 - 2019
+
+
+drop table employee cascade constraints;
+
+create table employee
+(EMPLOYEE_ID	char(6),
+date_hired 	date		not null,
+position_field	varchar2(10),
+primary key	(employee_id));
+
+drop table customer cascade constraints;
+
+create table customer
+(CUSTOMER_ID	char(6),
+cus_addre	varchar2(35),
+cus_phone	char(10),
+primary key (customer_id));
+
+
+drop table oil_change cascade constraints;
+
+create table oil_change 
+(OIL_CHANGE_ID		char(6),
+oil_change_date		date	not null,
+oil_type		varchar2(6),
+customer_id		char(6),
+employee_id		char(6),
+primary key (oil_change_id),
+foreign key (customer_id) references customer,
+foreign key (employee_id) references employee);
+
+
+drop table car cascade constraints;
+
+create table car
+(year_manu   char(4),
+make	     varchar2(15),
+model	     varchar2(15),
+CAR_ID	     char(6),
+customer_id  char(6),
+primary key (car_id),
+foreign key  (customer_id) references customer);
+
+
+
+drop table tools cascade constraints;
+
+create table tools
+(TOOL_ID     char(5),
+primary key (tool_id));
+
+drop table check_out cascade constraints;
+
+create table check_out
+(date_out    date	not null,
+date_in	     date,
+TOOL_ID	     char(5),
+employee_id  char(6),
+foreign key (tool_id) references tools,
+foreign key (employee_id) references employee);
+
+
+
+
+drop table manger cascade constraints;
+
+create table manger
+(date_promoted		date,
+manager_salary		char(6),
+employee_id		char(6),
+foreign key (employee_id) references employee);
+
+
+drop table mechanic cascade constraints;
+
+create table mechanic
+(mechanic_salary	char(6),
+employee_id		char(6),
+foreign key (employee_id) references employee);

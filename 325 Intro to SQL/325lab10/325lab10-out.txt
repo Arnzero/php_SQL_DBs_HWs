@@ -1,0 +1,76 @@
+Daysi Hilario and Adrian Haro
+Lab Query 1
+
+JOB_TITLE  MGR                                                                  
+---------- ----                                                                 
+Clerk      7782                                                                 
+Sales      7698                                                                 
+
+Lab Query 2
+
+JOB_TITLE  MGR                                                                  
+---------- ----                                                                 
+Sales      7698                                                                 
+
+Lab Query 3
+
+JOB_TITLE  MGR                                                                  
+---------- ----                                                                 
+Clerk      7782                                                                 
+
+Lab Query 4
+
+EMPL_LAST_NAME  Twice_Salary                                                    
+--------------- ------------                                                    
+Miller                  2600                                                    
+
+Lab Query 5
+
+EMPL_LAST_NAME  JOB_TITLE      SALARY COMMISSION                                
+--------------- ---------- ---------- ----------                                
+Michaels        Sales            1600        300                                
+Ward            Sales            1250        200                                
+Martin          Sales            1250        200                                
+Turner          Sales            1500          0                                
+
+
+2 rows updated.
+
+
+EMPL_LAST_NAME  JOB_TITLE      SALARY COMMISSION                                
+--------------- ---------- ---------- ----------                                
+King            President        5000                                           
+Jones           Manager          2975                                           
+Blake           Manager          2850                                           
+Raimi           Manager          2450                                           
+Ford            Analyst          3000                                           
+Michaels        Sales            1600        300                                
+Ward            Sales            1250        300                                
+Martin          Sales            1250        300                                
+Scott           Analyst          3000                                           
+Turner          Sales            1500          0                                
+Miller          Clerk            1300                                           
+
+11 rows selected.
+
+Lab Query 6
+
+0 rows deleted.
+
+
+EMPL_LAST_NAME  JOB_TITLE      SALARY                                           
+--------------- ---------- ----------                                           
+King            President        5000                                           
+Jones           Manager          2975                                           
+Blake           Manager          2850                                           
+Raimi           Manager          2450                                           
+Ford            Analyst          3000                                           
+Michaels        Sales            1600                                           
+Ward            Sales            1250                                           
+Martin          Sales            1250                                           
+Scott           Analyst          3000                                           
+Turner          Sales            1500                                           
+Miller          Clerk            1300                                           
+
+11 rows selected.
+

@@ -1,0 +1,36 @@
+Adrian Haro
+3/21/2020
+
+1 part a
+
+<?php
+  echo(6*7);
+?>
+
+1 part b
+
+<h2> Hello, <?=	$name ?>! </h2>
+
+1 part c
+ The opening and closing tags of a regular PHP tag
+	will each be on their own line.
+
+1 part d
+ It is encouraged to put PHP expression tags in line
+	within HTML or document content.
+
+1 part e
+ The PHP curly braces, { and } are expected to be
+	placed on their own lines, lined up and
+	structured
+
+1 part f
+ All user input is sent as UNTRUSTED, PHP fuctions
+	to help guard against cross-site scripting are
+	strip_tags, htmlspecialchars, and htmlentities
+
+1 part g
+ To guard against SQL injection, avoid dynamic SQL
+	statements using concatenation via;
+	use of bind variables, stored procedures
+	and functions.

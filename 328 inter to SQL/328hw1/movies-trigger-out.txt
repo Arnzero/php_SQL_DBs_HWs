@@ -1,0 +1,64 @@
+Adrian Haro
+make trigger for new rentals whose
+credit rating is < 1.5 and prevent rental
+
+Trigger created.
+
+No errors.
+
+Commit complete.
+
+Following rental insert should FAIL
+insert into rental
+            *
+ERROR at line 1:
+ORA-20111: Credit TOO LOW 
+ORA-06512: at "AFH146.APPROVE_RENTAL", line 11 
+ORA-04088: error during execution of trigger 'AFH146.APPROVE_RENTAL' 
+
+
+Following rental insert should SUCCEED
+Credit approved for rental!                                                     
+
+1 row created.
+
+Rental '0000025' was never inserted but '0000026 is inserted
+
+RENTAL_ CLIE VID_ID DATE_OUT  DATE_DUE  DATE_RETU                               
+------- ---- ------ --------- --------- ---------                               
+0000001 5555 120011 21-SEP-19 23-SEP-19 22-SEP-19                               
+0000002 2222 130031 19-SEP-19 22-SEP-19                                         
+0000003 2222 130012 03-SEP-19 08-SEP-19 04-SEP-19                               
+0000004 3333 130012 21-SEP-19 22-SEP-19                                         
+0000005 3333 210011 08-AUG-19 11-AUG-19                                         
+0000007 3333 120011 15-SEP-19 18-SEP-19 21-SEP-19                               
+0000008 1111 130022 04-SEP-19 07-SEP-19 14-SEP-19                               
+0000009 6666 130012 13-SEP-19 16-SEP-19 16-SEP-19                               
+0000010 7777 120011 14-SEP-19 17-SEP-19 17-SEP-19                               
+0000011 8888 230012 05-SEP-19 10-SEP-19                                         
+0000012 9999 210031 10-SEP-19 13-SEP-19 13-SEP-19                               
+
+RENTAL_ CLIE VID_ID DATE_OUT  DATE_DUE  DATE_RETU                               
+------- ---- ------ --------- --------- ---------                               
+0000013 9999 210041 10-SEP-19 13-SEP-19 13-SEP-19                               
+0000014 9999 230033 10-SEP-19 13-SEP-19 13-SEP-19                               
+0000015 3333 420011 01-SEP-19 04-SEP-19 03-SEP-19                               
+0000016 2222 330023 11-SEP-19 16-SEP-19 15-SEP-19                               
+0000017 5555 220013 22-SEP-19 25-SEP-19                                         
+0000018 1111 220062 21-SEP-19 26-SEP-19                                         
+0000019 3333 320032 06-SEP-19 09-SEP-19 07-SEP-19                               
+0000020 7777 130031 29-AUG-19 01-SEP-19 02-SEP-19                               
+0000021 6666 210011 15-SEP-19 17-SEP-19                                         
+0000022 5555 210031 16-SEP-19 18-SEP-19 17-SEP-19                               
+0000023 4444 120011 16-SEP-19 18-SEP-19 21-SEP-19                               
+
+RENTAL_ CLIE VID_ID DATE_OUT  DATE_DUE  DATE_RETU                               
+------- ---- ------ --------- --------- ---------                               
+0000024 7777 130031 08-SEP-19 10-SEP-19 09-SEP-19                               
+0000026 3333 230074 30-JAN-20 02-FEB-20                                         
+
+24 rows selected.
+
+
+Rollback complete.
+

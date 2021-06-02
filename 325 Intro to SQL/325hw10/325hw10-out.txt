@@ -1,0 +1,690 @@
+HW10 Problem 2
+Adrian Haro
+Problem 2-2
+project for each rental, renting client's last name,
+the rented video's movie title and video format, order by
+client's last name and secondary order by rented video's movie title
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+CLIENT_LNAME    Movie Title                          Format                
+--------------- ------------------------------------ -------               
+Alpha           It's a Wonderful Life                DVD                   
+Alpha           The Phantom Menace                   Blu-Ray               
+Beta            Gone with the Wind                   DVD                   
+Beta            Gone with the Wind                   Blu-Ray               
+Beta            Indiana Jones and the Temple of Doom Blu-Ray               
+Beta            Star Wars                            HD-DVD                
+Beta            The Muppet Movie                     DVD                   
+Beta            Toy Story                            DVD                   
+Carlos          Gone with the Wind                   Blu-Ray               
+Carlos          Gone with the Wind                   DVD                   
+Carlos          Indiana Jones and the Temple of Doom HD-DVD                
+Carlos          One Flew Over the Cuckoo's Nest      Blu-Ray               
+Carlos          Toy Story 2                          Blu-Ray               
+Delta           Gone with the Wind                   Blu-Ray               
+Epsilon         Gone with the Wind                   DVD                   
+Epsilon         Indiana Jones and the Temple of Doom HD-DVD                
+Feta            Gone with the Wind                   Blu-Ray               
+Feta            The Muppet Movie                     DVD                   
+Feta            The Muppet Movie                     DVD                   
+Greta           Indiana Jones and the Temple of Doom DVD                   
+Harpo           Star Wars                            HD-DVD                
+Harpo           Star Wars                            DVD                   
+Harpo           The Empire Strikes Back              HD-DVD                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-3
+project JUST for not-yet-returned rentals,
+the renting client's last name, the rented
+video's movie title and date due for that rental
+order by rental date due, secondary order client last name
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+CLIENT_LNAME    Movie Title                          DATE_DUE              
+--------------- ------------------------------------ ---------             
+Carlos          Indiana Jones and the Temple of Doom 11-AUG-19             
+Greta           Indiana Jones and the Temple of Doom 10-SEP-19             
+Epsilon         Indiana Jones and the Temple of Doom 17-SEP-19             
+Beta            The Muppet Movie                     22-SEP-19             
+Carlos          Gone with the Wind                   22-SEP-19             
+Beta            Indiana Jones and the Temple of Doom 25-SEP-19             
+Alpha           The Phantom Menace                   26-SEP-19             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-4
+clear all column breakds and computes
+create a top title and bottom  title
+make pagesize 35 lines and linesize 75 characters
+turn feedback off
+Problem 2-5
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+CLIENT_NAME                      MOVIE_TITLE                               
+-------------------------------- ----------------------------------------  
+VID_FOR VID_RENTAL_PRICE                                                   
+------- ----------------                                                   
+Alpha, Ann                       It's a Wonderful Life                     
+DVD                 5.99                                                   
+                                                                           
+Alpha, Ann                       The Phantom Menace                        
+Blu-Ray             2.99                                                   
+                                                                           
+Beta, Bob                        Gone with the Wind                        
+DVD                 4.99                                                   
+                                                                           
+Beta, Bob                        The Muppet Movie                          
+DVD                 4.99                                                   
+                                                                           
+Beta, Bob                        Toy Story                                 
+DVD                 4.99                                                   
+                                                                           
+Beta, Edie                       Gone with the Wind                        
+Blu-Ray             2.99                                                   
+                                                                           
+Beta, Edie                       Indiana Jones and the Temple of Doom      
+Blu-Ray             2.19                                                   
+                                                                           
+Beta, Edie                       Star Wars                                 
+HD-DVD               .99                                                   
+                                                                           
+Carlos, Ann                      Gone with the Wind                        
+DVD                 4.99                                                   
+                                End of page
+
+Tue Nov 26                                                        page    2
+                             Welcome to Oracle
+
+CLIENT_NAME                      MOVIE_TITLE                               
+-------------------------------- ----------------------------------------  
+VID_FOR VID_RENTAL_PRICE                                                   
+------- ----------------                                                   
+                                                                           
+Carlos, Ann                      Gone with the Wind                        
+Blu-Ray             2.99                                                   
+                                                                           
+Carlos, Ann                      Toy Story 2                               
+Blu-Ray             2.99                                                   
+                                                                           
+Carlos, Ann                      One Flew Over the Cuckoo's Nest           
+Blu-Ray             2.19                                                   
+                                                                           
+Carlos, Ann                      Indiana Jones and the Temple of Doom      
+HD-DVD               .99                                                   
+                                                                           
+Delta, David                     Gone with the Wind                        
+Blu-Ray             2.99                                                   
+                                                                           
+Epsilon, Emma                    Gone with the Wind                        
+DVD                 4.99                                                   
+                                                                           
+Epsilon, Emma                    Indiana Jones and the Temple of Doom      
+HD-DVD               .99                                                   
+                                                                           
+Feta, Frank                      The Muppet Movie                          
+DVD                 4.99                                                   
+                                                                           
+Feta, Frank                      The Muppet Movie                          
+                                End of page
+
+Tue Nov 26                                                        page    3
+                             Welcome to Oracle
+
+CLIENT_NAME                      MOVIE_TITLE                               
+-------------------------------- ----------------------------------------  
+VID_FOR VID_RENTAL_PRICE                                                   
+------- ----------------                                                   
+DVD                 4.99                                                   
+                                                                           
+Feta, Frank                      Gone with the Wind                        
+Blu-Ray             2.99                                                   
+                                                                           
+Greta, Gail                      Indiana Jones and the Temple of Doom      
+DVD                 3.99                                                   
+                                                                           
+Harpo, Harry                     Star Wars                                 
+DVD                 3.99                                                   
+                                                                           
+Harpo, Harry                     The Empire Strikes Back                   
+HD-DVD              1.29                                                   
+                                                                           
+Harpo, Harry                     Star Wars                                 
+HD-DVD               .99                                                   
+                                                                           
+
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-6
+write column commands
+give client_name heading Client
+narrower than default width but big enough
+Write column commands for movie_title
+give movie_title heading Movie Title
+same as above character width
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client          Movie Title                          Format  Rental Price  
+--------------- ------------------------------------ ------- ------------  
+Alpha, Ann      It's a Wonderful Life                DVD            $5.99  
+Alpha, Ann      The Phantom Menace                   Blu-Ray        $2.99  
+Beta, Bob       Gone with the Wind                   DVD            $4.99  
+Beta, Bob       The Muppet Movie                     DVD            $4.99  
+Beta, Bob       Toy Story                            DVD            $4.99  
+Beta, Edie      Gone with the Wind                   Blu-Ray        $2.99  
+Beta, Edie      Indiana Jones and the Temple of Doom Blu-Ray        $2.19  
+Beta, Edie      Star Wars                            HD-DVD          $.99  
+Carlos, Ann     Gone with the Wind                   DVD            $4.99  
+Carlos, Ann     Gone with the Wind                   Blu-Ray        $2.99  
+Carlos, Ann     Toy Story 2                          Blu-Ray        $2.99  
+Carlos, Ann     One Flew Over the Cuckoo's Nest      Blu-Ray        $2.19  
+Carlos, Ann     Indiana Jones and the Temple of Doom HD-DVD          $.99  
+Delta, David    Gone with the Wind                   Blu-Ray        $2.99  
+Epsilon, Emma   Gone with the Wind                   DVD            $4.99  
+Epsilon, Emma   Indiana Jones and the Temple of Doom HD-DVD          $.99  
+Feta, Frank     The Muppet Movie                     DVD            $4.99  
+Feta, Frank     The Muppet Movie                     DVD            $4.99  
+Feta, Frank     Gone with the Wind                   Blu-Ray        $2.99  
+Greta, Gail     Indiana Jones and the Temple of Doom DVD            $3.99  
+Harpo, Harry    Star Wars                            DVD            $3.99  
+Harpo, Harry    The Empire Strikes Back              HD-DVD         $1.29  
+Harpo, Harry    Star Wars                            HD-DVD          $.99  
+
+
+
+
+
+                                End of page
+Problem 2-7
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+CATE_NAME  VIDEO_COUNT AVG_RENTAL_PRICE                                    
+---------- ----------- ----------------                                    
+Action              20            3.125                                    
+Family              10             3.79                                    
+Classic              6       3.32333333                                    
+Drama                5             2.01                                    
+Comedy               1             1.99                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                End of page
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Category # Videos Avg Price                                                
+-------- -------- ---------                                                
+Action         20     $3.13                                                
+Family         10     $3.79                                                
+Classic         6     $3.32                                                
+Drama           5     $2.01                                                
+Comedy          1     $1.99                                                
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-9 commit
+Problem 2-9a
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Category # Videos Avg Price                                                
+-------- -------- ---------                                                
+Action         20     $3.00                                                
+Family         10     $3.67                                                
+Classic         6     $3.16                                                
+Drama           5     $1.81                                                
+Comedy          1     $1.99                                                
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-9b
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client                                                                     
+---------------                                                            
+Beta, Bob                                                                  
+Beta, Edie                                                                 
+Carlos, Ann                                                                
+Delta, David                                                               
+Epsilon, Emma                                                              
+Feta, Frank                                                                
+
+
+
+
+
+
+
+                                End of page
+Problem 2-9c
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client                                                                     
+---------------                                                            
+Beta, Bob                                                                  
+Carlos, Ann                                                                
+Delta, David                                                               
+Epsilon, Emma                                                              
+Feta, Frank                                                                
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-9d
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client          COUNT(CLIENT_NAME)                                         
+--------------- ------------------                                         
+Carlos, Ann                      5                                         
+Feta, Frank                      3                                         
+Beta, Bob                        3                                         
+Harpo, Harry                     3                                         
+Epsilon, Emma                    2                                         
+Alpha, Ann                       2                                         
+Delta, David                     1                                         
+Greta, Gail                      1                                         
+
+
+
+
+
+                                End of page
+We have rolledback
+Problem 2-10 (people and their rented movies)
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client          Movie Title                                                
+--------------- ------------------------------------                       
+Alpha, Ann      It's a Wonderful Life                                      
+                The Phantom Menace                                         
+                                                                           
+Beta, Bob       Gone with the Wind                                         
+                The Muppet Movie                                           
+                Toy Story                                                  
+                                                                           
+Beta, Edie      Gone with the Wind                                         
+                Indiana Jones and the Temple of Doom                       
+                Star Wars                                                  
+                                                                           
+Carlos, Ann     Gone with the Wind                                         
+                Indiana Jones and the Temple of Doom                       
+                One Flew Over the Cuckoo's Nest                            
+                Toy Story 2                                                
+                                                                           
+Delta, David    Gone with the Wind                                         
+                                                                           
+Epsilon, Emma   Gone with the Wind                                         
+                Indiana Jones and the Temple of Doom                       
+                                                                           
+Feta, Frank     Gone with the Wind                                         
+                The Muppet Movie                                           
+                                                                           
+Greta, Gail     Indiana Jones and the Temple of Doom                       
+                                                                           
+Harpo, Harry    Star Wars                                                  
+                The Empire Strikes Back                                    
+                                                                           
+
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-11
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client          Movie Title                                                
+--------------- ------------------------------------                       
+Alpha, Ann      It's a Wonderful Life                                      
+                The Phantom Menace                                         
+*************** ------------------------------------                       
+count                                              2                       
+                                                                           
+Beta, Bob       Gone with the Wind                                         
+                The Muppet Movie                                           
+                Toy Story                                                  
+*************** ------------------------------------                       
+count                                              3                       
+                                                                           
+Beta, Edie      Gone with the Wind                                         
+                Indiana Jones and the Temple of Doom                       
+                Star Wars                                                  
+*************** ------------------------------------                       
+count                                              3                       
+                                                                           
+Carlos, Ann     Gone with the Wind                                         
+                Indiana Jones and the Temple of Doom                       
+                One Flew Over the Cuckoo's Nest                            
+                Toy Story 2                                                
+*************** ------------------------------------                       
+count                                              4                       
+                                                                           
+Delta, David    Gone with the Wind                                         
+*************** ------------------------------------                       
+count                                              1                       
+                                                                           
+Epsilon, Emma   Gone with the Wind                                         
+                Indiana Jones and the Temple of Doom                       
+*************** ------------------------------------                       
+count                                              2                       
+                                                                           
+Feta, Frank     Gone with the Wind                                         
+                The Muppet Movie                                           
+*************** ------------------------------------                       
+count                                              2                       
+                                                                           
+Greta, Gail     Indiana Jones and the Temple of Doom                       
+*************** ------------------------------------                       
+count                                              1                       
+                                                                           
+Harpo, Harry    Star Wars                                                  
+                The Empire Strikes Back                                    
+*************** ------------------------------------                       
+count                                              2                       
+                                                                           
+
+                                End of page
+Problem 2-12
+
+Tue Nov 26                                                        page    1
+                             Welcome to Oracle
+
+Client          Movie Title                          Format  Rental Price  
+--------------- ------------------------------------ ------- ------------  
+Alpha, Ann      It's a Wonderful Life                DVD            $5.99  
+                The Phantom Menace                   Blu-Ray        $2.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $4.49  
+count                                              2                       
+                                                                           
+                                                                           
+                                                                           
+Beta, Bob       Gone with the Wind                   DVD            $4.99  
+                The Muppet Movie                     DVD            $4.99  
+                Toy Story                            DVD            $4.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $4.99  
+count                                              3                       
+                                                                           
+                                                                           
+                                                                           
+Beta, Edie      Gone with the Wind                   Blu-Ray        $2.99  
+                Indiana Jones and the Temple of Doom Blu-Ray        $2.19  
+                Star Wars                            HD-DVD          $.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $2.06  
+count                                              3                       
+                                                                           
+                                                                           
+                                                                           
+Carlos, Ann     Gone with the Wind                   Blu-Ray        $2.99  
+                Gone with the Wind                   DVD            $4.99  
+                Indiana Jones and the Temple of Doom HD-DVD          $.99  
+                One Flew Over the Cuckoo's Nest      Blu-Ray        $2.19  
+                Toy Story 2                          Blu-Ray        $2.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $2.83  
+count                                              5                       
+                                                                           
+                                                                           
+                                                                           
+Delta, David    Gone with the Wind                   Blu-Ray        $2.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $2.99  
+count                                              1                       
+                                                                           
+                                                                           
+                                                                           
+Epsilon, Emma   Gone with the Wind                   DVD            $4.99  
+                Indiana Jones and the Temple of Doom HD-DVD          $.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $2.99  
+count                                              2                       
+                                                                           
+                                                                           
+                                                                           
+Feta, Frank     Gone with the Wind                   Blu-Ray        $2.99  
+                The Muppet Movie                     DVD            $4.99  
+                The Muppet Movie                     DVD            $4.99  
+*************** ------------------------------------         ------------  
+avg                                                                 $4.32  
+count                                              3                       
+                                                                           
+                                                                           
+                                                                           
+Greta, Gail     Indiana Jones and the Temple of Doom DVD            $3.99  
+*************** ------------------------------------         ------------  
+                                End of page
+
+Tue Nov 26                                                        page    2
+                             Welcome to Oracle
+
+Client          Movie Title                          Format  Rental Price  
+--------------- ------------------------------------ ------- ------------  
+avg                                                                 $3.99  
+count                                              1                       
+                                                                           
+                                                                           
+                                                                           
+Harpo, Harry    Star Wars                            HD-DVD          $.99  
+                Star Wars                            DVD            $3.99  
+                The Empire Strikes Back              HD-DVD         $1.29  
+*************** ------------------------------------         ------------  
+avg                                                                 $2.09  
+count                                              3                       
+                                                                           
+                                                                           
+                                                                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                End of page
+Problem 2-13(calling cleanup script after spool off)

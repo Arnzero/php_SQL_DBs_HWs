@@ -1,0 +1,9 @@
+
+ SPORTS_ID SPORTS_NAME          BALL_COLOR           NUM_OF_PPL_IN_TEAM         
+---------- -------------------- -------------------- ------------------         
+         1 Basketball           Orange                               12         
+         2 Baseball             White                                 9         
+         3 Tennis               Green                                 1         
+         4 Soccer               White/Black                          11         
+         5 Ping Pong            White                                 1         
+

@@ -1,0 +1,141 @@
+Adrian Haro
+Problem 5a
+
+Current Rows num                                                                
+----------------                                                                
+               8                                                                
+
+Problem 5b
+
+MAX(ORD_NEEDED_ID)                                                              
+------------------                                                              
+              1010                                                              
+
+Problem 5c
+insert into order_stock
+*
+ERROR at line 1:
+ORA-00001: unique constraint (AFH146.ORDER_STOCK_PK) violated 
+
+
+insert into order_stock
+*
+ERROR at line 1:
+ORA-00001: unique constraint (AFH146.ORDER_STOCK_PK) violated 
+
+
+insert into order_stock
+*
+ERROR at line 1:
+ORA-00001: unique constraint (AFH146.ORDER_STOCK_PK) violated 
+
+
+insert into order_line_item
+*
+ERROR at line 1:
+ORA-00001: unique constraint (AFH146.ORDER_LINE_ITEM_PK) violated 
+
+
+insert into order_line_item
+*
+ERROR at line 1:
+ORA-00001: unique constraint (AFH146.ORDER_LINE_ITEM_PK) violated 
+
+
+
+TTL_ISBN      PENDING_ORD_NUM QTY_AWAITING                                      
+------------- --------------- ------------                                      
+9780133760064           11017           60                                      
+9780201078282           11016           50                                      
+
+Problem 6
+
+Function created.
+
+No errors.
+running next_ord_needed_id_test dot sql
+
+************
+TESTING next_ord_needed_id
+************
+
+============
+test passes if the next ord_needed_id suggested is 1011:
+============
+
+PL/SQL procedure successfully completed.
+
+
+RESULT_KEY                                                                      
+----------                                                                      
+      1011                                                                      
+
+
+Commit complete.
+
+
+8 rows deleted.
+
+============
+test passes if the next ord_needed_id suggested is 1:
+============
+
+PL/SQL procedure successfully completed.
+
+
+RESULT_KEY                                                                      
+----------                                                                      
+         1                                                                      
+
+
+Rollback complete.
+
+
+1 row updated.
+
+
+test passes if the next ord_needed_id suggested is 3038:
+==========================================================
+
+PL/SQL procedure successfully completed.
+
+
+RESULT_KEY                                                                      
+----------                                                                      
+      3038                                                                      
+
+
+Rollback complete.
+
+Problem 7
+
+Function created.
+
+No errors.
+test 1 should return true
+
+PL/SQL procedure successfully completed.
+
+
+ON_ORDER_STATUS                                                                 
+--------------------------------                                                
+TRUE                                                                            
+
+test 2 should return false, in db but not in order
+
+PL/SQL procedure successfully completed.
+
+
+ON_ORDER_STATUS                                                                 
+--------------------------------                                                
+FALSE                                                                           
+
+test 3 should return false, not in db
+
+PL/SQL procedure successfully completed.
+
+
+ON_ORDER_STATUS                                                                 
+--------------------------------                                                
+FALSE                                                                           
+

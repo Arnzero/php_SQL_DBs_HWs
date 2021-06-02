@@ -1,0 +1,60 @@
+--Adrian Haro
+--11/19/2019
+-- Problem 4
+
+Problem 4-1
+ Domain integrity is the refusal of insertion of wrong type.
+
+Problem 4-2
+ Entity integrity makes sure our 'records' are unique
+
+Problem 4-3
+ Referential integrity keeps consisency between parent
+	and child tables, they ride or dye together.
+
+Problem 4-4
+  Transaction atomicity Integrity supports commit and rollback
+	either completely done or not (LUW).
+
+Problem 4-5
+ If a DBMS allows duplicae rows it does not support
+	entitiy integrity.
+
+Problem 4-6
+ Referential integrity  means you cannot delete an entity that
+	depends on another entity.
+
+Problem 4-7
+  When a DBMS has automatic backup and recovery capabilities
+        it could be said to be providing support for 
+	transaction integrity.
+
+Problem 4-8
+ Oracle uses the 'check' clause to restrict values
+	this is *domain integrity*.
+
+Problem 4-9
+ Durability maintains consistent state between trasactions.
+
+Problem 4-10
+ Serializability allows for concurrent execution of transactions to be 
+	executed serially in some arbitrary order.
+
+Problem 4-11
+  Consistency demands a transaction has to transform a database
+	from one consistent state to another consistent state.
+
+Problem 4-12
+ Durability and Atomicity are responsible for 
+	recovery subsystem to ensure.
+
+Problem 4-13
+ Isolation ensures that the data used during a transaction cannot
+	be used by a second transaction until the first one
+	is completed.
+
+Problem 4-14
+ Atomicty is the 'all or nothing' property over operations or 
+	parts of a transaction.
+
+

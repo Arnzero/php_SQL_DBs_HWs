@@ -1,0 +1,89 @@
+lab problem 1
+lab Problem 2
+
+EMPL_LAST_NAME      SALARY                                                      
+--------------- ----------                                                      
+King                  5000                                                      
+Jones                 2975                                                      
+Blake                 2850                                                      
+Raimi                 2450                                                      
+Ford                  3000                                                      
+Smith                  800                                                      
+Michaels              1600                                                      
+Ward                  1250                                                      
+Martin                1250                                                      
+Scott                 3000                                                      
+Turner                1500                                                      
+Adams                 1100                                                      
+James                  950                                                      
+Miller                1300                                                      
+lab problem 3
+
+MAX(SALARY)                                                                     
+-----------                                                                     
+       5000                                                                     
+lab problem 4
+lab problem 5
+
+JOB_TITLE  HIRED                                                                
+---------- ---------                                                            
+Manager    02-APR-12                                                            
+Analyst    03-DEC-12                                                            
+Clerk      17-DEC-12                                                            
+President  17-NOV-11                                                            
+Sales      20-FEB-18                                                            
+lab problem 6
+
+HIRED                                                                           
+---------                                                                       
+17-NOV-11                                                                       
+Lab Query 7
+
+   NEXTVAL                                                                      
+----------                                                                      
+        13                                                                      
+
+   NEXTVAL                                                                      
+----------                                                                      
+       113                                                                      
+
+   CURRVAL                                                                      
+----------                                                                      
+       113                                                                      
+lab problem 8
+
+DEPT_NAME           SALARY                                                      
+--------------- ----------                                                      
+Accounting            2450                                                      
+Accounting            1300                                                      
+Management            5000                                                      
+Operations            1100                                                      
+Research              3000                                                      
+Research              2975                                                      
+Research              3000                                                      
+Research               800                                                      
+Sales                 1500                                                      
+Sales                  950                                                      
+Sales                 1600                                                      
+Sales                 2850                                                      
+Sales                 1250                                                      
+Sales                 1250                                                      
+lab problem 9
+
+DEPT_NAME           SALARY                                                      
+--------------- ----------                                                      
+Accounting            2450                                                      
+Accounting            1300                                                      
+Management            5000                                                      
+Operations            1100                                                      
+Research              3000                                                      
+Research              2975                                                      
+Research              3000                                                      
+Research               800                                                      
+Sales                 1500                                                      
+Sales                  950                                                      
+Sales                 1600                                                      
+Sales                 2850                                                      
+Sales                 1250                                                      
+Sales                 1250                                                      
+lab problem 10

@@ -1,0 +1,286 @@
+Homework 5 Problem 1
+Adrian Haro
+Problem 1-1: relational selection where client rating > 3.4
+
+CLIE CLIENT_LNAME    CLIENT_FNAME    CLIENT_P CLIENT_CREDIT_RTG CLI             
+---- --------------- --------------- -------- ----------------- ---             
+1111 Alpha           Ann             111-1111               4.9 100             
+3333 Carlos          Ann             333-3333               3.8 300             
+5555 Beta            Edie            555-5555                 5                 
+8888 Greta           Gail            888-8888               4.4 200             
+
+Problem 1-2: pure relational projection from table
+of  'movie rating' and 'year released'
+
+MOVIE MOVI                                                                      
+----- ----                                                                      
+PG-13 1989                                                                      
+G     1999                                                                      
+A     1969                                                                      
+G     1979                                                                      
+R     1975                                                                      
+R     1987                                                                      
+PG    1983                                                                      
+PG    1999                                                                      
+G     1940                                                                      
+PG    1977                                                                      
+PG    1980                                                                      
+
+MOVIE MOVI                                                                      
+----- ----                                                                      
+R     1980                                                                      
+G     1950                                                                      
+R     1999                                                                      
+G     1939                                                                      
+G     1947                                                                      
+G     1995                                                                      
+A     1971                                                                      
+PG    1984                                                                      
+
+19 rows selected.
+
+Problem 1-3: equi-join client and movie_category tables
+
+CAT CATEGORY_N CLIE CLIENT_LNAME    CLIENT_FNAME    CLIENT_P CLIENT_CREDIT_RTG  
+--- ---------- ---- --------------- --------------- -------- -----------------  
+CLI                                                                             
+---                                                                             
+100 Comedy     1111 Alpha           Ann             111-1111               4.9  
+100                                                                             
+                                                                                
+200 Action     2222 Beta            Bob             222-2222               1.2  
+200                                                                             
+                                                                                
+300 Drama      3333 Carlos          Ann             333-3333               3.8  
+300                                                                             
+                                                                                
+
+CAT CATEGORY_N CLIE CLIENT_LNAME    CLIENT_FNAME    CLIENT_P CLIENT_CREDIT_RTG  
+--- ---------- ---- --------------- --------------- -------- -----------------  
+CLI                                                                             
+---                                                                             
+400 Classic    4444 Delta           David           222-2222               3.4  
+400                                                                             
+                                                                                
+400 Classic    6666 Epsilon         Emma            666-6666               2.1  
+400                                                                             
+                                                                                
+500 Family     7777 Feta            Frank           777-7777                 0  
+500                                                                             
+                                                                                
+
+CAT CATEGORY_N CLIE CLIENT_LNAME    CLIENT_FNAME    CLIENT_P CLIENT_CREDIT_RTG  
+--- ---------- ---- --------------- --------------- -------- -----------------  
+CLI                                                                             
+---                                                                             
+200 Action     8888 Greta           Gail            888-8888               4.4  
+200                                                                             
+                                                                                
+100 Comedy     9999 Harpo           Harry           999-9999               3.3  
+100                                                                             
+                                                                                
+
+8 rows selected.
+
+Problem 1-4: project rented video IDs, date out and date due
+
+VID_ID DATE_OUT  DATE_DUE                                                       
+------ --------- ---------                                                      
+130031 19-SEP-19 22-SEP-19                                                      
+130012 21-SEP-19 22-SEP-19                                                      
+210011 08-AUG-19 11-AUG-19                                                      
+230012 05-SEP-19 10-SEP-19                                                      
+220013 22-SEP-19 25-SEP-19                                                      
+220062 21-SEP-19 26-SEP-19                                                      
+210011 15-SEP-19 17-SEP-19                                                      
+
+7 rows selected.
+
+Problem 1-5: project video ID's, format, prices for sans(format)BlueRay
+
+VID_ID VID_FOR VID_RENTAL_PRICE                                                 
+------ ------- ----------------                                                 
+130012 DVD                 4.99                                                 
+130022 DVD                 5.99                                                 
+130031 DVD                 4.99                                                 
+130061 DVD                 1.99                                                 
+210011 HD-DVD               .99                                                 
+230012 DVD                 3.99                                                 
+330012 DVD                 3.99                                                 
+330023 DVD                 4.99                                                 
+330033 DVD                 5.99                                                 
+330034 DVD                 5.99                                                 
+210031 HD-DVD               .99                                                 
+
+VID_ID VID_FOR VID_RENTAL_PRICE                                                 
+------ ------- ----------------                                                 
+230033 DVD                 3.99                                                 
+210041 HD-DVD              1.29                                                 
+230043 DVD                 3.99                                                 
+230052 DVD                 3.99                                                 
+230064 DVD                 5.99                                                 
+410041 HD-DVD              1.29                                                 
+230073 DVD                 5.99                                                 
+230074 DVD                 5.99                                                 
+
+19 rows selected.
+
+Problem 1-6: project movie_cat_name, cli_lnam, cli_crd_rtg
+using equi-join for movie_cat and client tables
+
+CATEGORY_N CLIENT_LNAME    CLIENT_CREDIT_RTG                                    
+---------- --------------- -----------------                                    
+Comedy     Alpha                         4.9                                    
+Action     Beta                          1.2                                    
+Drama      Carlos                        3.8                                    
+Classic    Delta                         3.4                                    
+Classic    Epsilon                       2.1                                    
+Family     Feta                            0                                    
+Action     Greta                         4.4                                    
+Comedy     Harpo                         3.3                                    
+
+8 rows selected.
+
+Problem 1-7: selection on videos purchased between
+July 15, 2008 and December 1, 2011 inclusive
+
+VID_ID VID_FOR VID_PURCH VID_RENTAL_PRICE MOVIE                                 
+------ ------- --------- ---------------- -----                                 
+120011 Blu-Ray 11-JAN-10             2.99 10001                                 
+130012 DVD     22-FEB-11             4.99 10001                                 
+120021 Blu-Ray 03-MAR-09             1.99 10002                                 
+130031 DVD     22-FEB-11             4.99 10003                                 
+130061 DVD     15-JAN-10             1.99 10006                                 
+210011 HD-DVD  05-MAY-09              .99 20001                                 
+230012 DVD     01-JAN-10             3.99 20001                                 
+330012 DVD     08-MAY-10             3.99 30001                                 
+330023 DVD     07-JUN-09             4.99 30002                                 
+320031 Blu-Ray 01-DEC-11             2.99 30003                                 
+320032 Blu-Ray 01-DEC-11             2.99 30003                                 
+
+VID_ID VID_FOR VID_PURCH VID_RENTAL_PRICE MOVIE                                 
+------ ------- --------- ---------------- -----                                 
+220032 Blu-Ray 15-JUL-08             1.99 20003                                 
+230033 DVD     17-AUG-10             3.99 20003                                 
+220042 Blu-Ray 15-JUL-08             1.99 20004                                 
+230043 DVD     17-AUG-10             3.99 20004                                 
+220051 Blu-Ray 15-JUL-08             1.99 20005                                 
+230052 DVD     17-AUG-10             3.99 20005                                 
+220061 Blu-Ray 01-DEC-11             2.99 20006                                 
+220062 Blu-Ray 01-DEC-11             2.99 20006                                 
+220063 Blu-Ray 01-DEC-11             2.99 20006                                 
+230064 DVD     01-DEC-11             5.99 20006                                 
+420011 Blu-Ray 04-OCT-10             2.19 40001                                 
+
+VID_ID VID_FOR VID_PURCH VID_RENTAL_PRICE MOVIE                                 
+------ ------- --------- ---------------- -----                                 
+420021 Blu-Ray 04-OCT-10             2.19 40002                                 
+420031 Blu-Ray 04-OCT-10             2.19 40003                                 
+120041 Blu-Ray 04-OCT-10             1.99 10004                                 
+120051 Blu-Ray 04-OCT-10             1.99 10005                                 
+
+26 rows selected.
+
+Problem 1-8: selection on videos where rental_price >= $3.99
+and purchase_date after January 1, 2011
+
+VID_ID VID_FOR VID_PURCH VID_RENTAL_PRICE MOVIE                                 
+------ ------- --------- ---------------- -----                                 
+130012 DVD     22-FEB-11             4.99 10001                                 
+130022 DVD     04-MAR-12             5.99 10002                                 
+130031 DVD     22-FEB-11             4.99 10003                                 
+330033 DVD     05-MAY-12             5.99 30003                                 
+330034 DVD     05-MAY-12             5.99 30003                                 
+230064 DVD     01-DEC-11             5.99 20006                                 
+230073 DVD     15-MAR-12             5.99 20007                                 
+230074 DVD     15-MAR-12             5.99 20007                                 
+
+8 rows selected.
+
+Problem 1-9: project only movie title and movie rating for
+all movies containing 'the' anywhere in title
+!! check solution for this one!
+
+MOVIE MOVIE_TITLE                              MOVIE_DIRECTOR_LNAME             
+----- ---------------------------------------- ------------------------------   
+MOVI MOVIE CAT                                                                  
+---- ----- ---                                                                  
+10001 Gone with the Wind                       Fleming                          
+1939 G     400                                                                  
+                                                                                
+20001 Indiana Jones and the Temple of Doom     Spielberg                        
+1984 PG    200                                                                  
+                                                                                
+20002 Indiana Jones and the Last Crusade       Spielberg                        
+1989 PG-13 200                                                                  
+                                                                                
+
+MOVIE MOVIE_TITLE                              MOVIE_DIRECTOR_LNAME             
+----- ---------------------------------------- ------------------------------   
+MOVI MOVIE CAT                                                                  
+---- ----- ---                                                                  
+20005 Return of the Jedi                       Marquand                         
+1983 PG    200                                                                  
+                                                                                
+40001 One Flew Over the Cuckoo's Nest          Forman                           
+1975 R     300                                                                  
+                                                                                
+
+Problem 1-10:
+Project only video ID, format, rental_price - 20% off
+for videos sans format 'Blu-Ray'. use column alias
+so 3rd column says IF_DISCT
+note I will use 4th column to display orignal price!
+
+VID_ID VID_FOR   IF DISCT Original Price                                        
+------ ------- ---------- --------------                                        
+130012 DVD          3.992           4.99                                        
+130022 DVD          4.792           5.99                                        
+130031 DVD          3.992           4.99                                        
+130061 DVD          1.592           1.99                                        
+210011 HD-DVD        .792            .99                                        
+230012 DVD          3.192           3.99                                        
+330012 DVD          3.192           3.99                                        
+330023 DVD          3.992           4.99                                        
+330033 DVD          4.792           5.99                                        
+330034 DVD          4.792           5.99                                        
+210031 HD-DVD        .792            .99                                        
+
+VID_ID VID_FOR   IF DISCT Original Price                                        
+------ ------- ---------- --------------                                        
+230033 DVD          3.192           3.99                                        
+210041 HD-DVD       1.032           1.29                                        
+230043 DVD          3.192           3.99                                        
+230052 DVD          3.192           3.99                                        
+230064 DVD          4.792           5.99                                        
+410041 HD-DVD       1.032           1.29                                        
+230073 DVD          4.792           5.99                                        
+230074 DVD          4.792           5.99                                        
+
+19 rows selected.
+
+Problem 1-11:
+Project only movie rating and movie title for all movies
+w/ rating PG-13 or R or A only using 'in' operator
+
+MOVIE MOVIE_TITLE                                                               
+----- ----------------------------------------                                  
+PG-13 Indiana Jones and the Last Crusade                                        
+R     One Flew Over the Cuckoo's Nest                                           
+A     Midnight Cowboy                                                           
+A     Clockwork Orange                                                          
+R     Fatal Attraction                                                          
+R     The Matrix                                                                
+R     The Blues Brothers                                                        
+
+7 rows selected.
+
+Problem 1-12:
+project current total number of videos and avg rental price
+for a video. Use column aliases: "Total Videos" and "Avg Rental".
+
+Total Videos Avg Rental                                                         
+------------ ----------                                                         
+          42 3.15190476                                                         
+
+EOF

@@ -1,0 +1,108 @@
+Homework 7 Problem 3
+Adrian Haro
+Problem  3-1 using ampersand, write select to project
+movie_title and yr released of movies
+whose director is inputed
+Enter value for dir_lname: Spielberg
+old   3: where movie_director_lname = '&dir_lname'
+new   3: where movie_director_lname = 'Spielberg'
+
+MOVIE_TITLE                              MOVI                                   
+---------------------------------------- ----                                   
+Indiana Jones and the Temple of Doom     1984                                   
+Indiana Jones and the Last Crusade       1989                                   
+
+Problem 3-2 using ampersand and nested select; project
+movie_title and director last name of movies
+whose category code is that of the category
+name inputed by ampersand
+Enter value for category: Classic
+old   6: 	 where category_name = '&category')
+new   6: 	 where category_name = 'Classic')
+
+MOVIE_TITLE                              MOVIE_DIRECTOR_LNAME                   
+---------------------------------------- ------------------------------         
+Gone with the Wind                       Fleming                                
+It's a Wonderful Life                    Capra                                  
+All About Eve                            Mankiewicz                             
+The Philadelphia Story                   Cukor                                  
+
+Problem 3-3 using ampersand and 3 table join, write select
+that projects number of videos of movies in category
+whose category name is user_input
+also project column is "# Videos".
+
+Enter value for category_name: Classic
+old   6: where category_name ='&Category_name'
+new   6: where category_name ='Classic'
+
+  # Videos                                                                      
+----------                                                                      
+         6                                                                      
+
+Problem 3-4 write select projects last n first names of clients who never returned
+a rented video AFTER the date that it was due.
+
+CLIENT_LNAME    CLIENT_FNAME                                                    
+--------------- ---------------                                                 
+Beta            Bob                                                             
+Beta            Edie                                                            
+Epsilon         Emma                                                            
+Greta           Gail                                                            
+Harpo           Harry                                                           
+
+Problem 3-5 write select projecting lname, fave_cat_names
+and credit ratings for clients who have credit
+ratings higher than the avg credit rating of all
+
+CLIENT_LNAME    CLI CLIENT_CREDIT_RTG                                           
+--------------- --- -----------------                                           
+Alpha           100               4.9                                           
+Greta           200               4.4                                           
+Carlos          300               3.8                                           
+Delta           400               3.4                                           
+Harpo           100               3.3                                           
+
+Problem 3-6 using a join and sub-select
+write a select that projects video_id, movie_title on that video
+and the format of that video, for never rented videos
+
+VID_ID MOVIE_TITLE                              VID_FOR                         
+------ ---------------------------------------- -------                         
+120041 All About Eve                            Blu-Ray                         
+330012 Babe                                     DVD                             
+320011 Babe                                     Blu-Ray                         
+420031 Clockwork Orange                         Blu-Ray                         
+410041 Fatal Attraction                         HD-DVD                          
+420042 Fatal Attraction                         Blu-Ray                         
+220021 Indiana Jones and the Last Crusade       Blu-Ray                         
+120021 It's a Wonderful Life                    Blu-Ray                         
+420021 Midnight Cowboy                          Blu-Ray                         
+220051 Return of the Jedi                       Blu-Ray                         
+230052 Return of the Jedi                       DVD                             
+
+VID_ID MOVIE_TITLE                              VID_FOR                         
+------ ---------------------------------------- -------                         
+220032 Star Wars                                Blu-Ray                         
+130061 The Blues Brothers                       DVD                             
+220042 The Empire Strikes Back                  Blu-Ray                         
+230043 The Empire Strikes Back                  DVD                             
+220071 The Matrix                               Blu-Ray                         
+220072 The Matrix                               Blu-Ray                         
+230073 The Matrix                               DVD                             
+230074 The Matrix                               DVD                             
+230064 The Phantom Menace                       DVD                             
+220061 The Phantom Menace                       Blu-Ray                         
+220063 The Phantom Menace                       Blu-Ray                         
+
+VID_ID MOVIE_TITLE                              VID_FOR                         
+------ ---------------------------------------- -------                         
+120051 The Philadelphia Story                   Blu-Ray                         
+320022 Toy Story                                Blu-Ray                         
+320021 Toy Story                                Blu-Ray                         
+320031 Toy Story 2                              Blu-Ray                         
+330033 Toy Story 2                              DVD                             
+330034 Toy Story 2                              DVD                             
+
+28 rows selected.
+

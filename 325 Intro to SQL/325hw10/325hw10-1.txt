@@ -1,0 +1,86 @@
+--Adrian Haro
+--CS325 HW10
+
+Problem 1-1
+This is an illustration of Deadlock where T1 and T2 have 
+an exclusive lock on A,B respectively and are waiting 
+for their requested lock of T1 and T2 respectively for B,A.
+
+Problem 1-2 (rollforward)
+Only the actions of transactions are redone, rolled back
+transactions are not redone, the non committed actions 
+are not redone.
+
+Problem 1-3
+Any commits before the time of failure are re-done as part
+of the recovery process.
+
+Problem 1-4
+Since a transaction T3 was not commited before the failure
+it will not be re-done as part of the recovery process.
+
+Problem 1-5
+T1[A]
+T2[C]
+T3[]
+T4[]
+B
+
+T3 requests B, T3[] => T3[B] obtains lock on B with no waiting.
+
+Problem 1-6 (Binary Locks)
+T1[A]
+T2[C]
+T3[B]
+T4[]
+
+T4 request bin lock on C. T4 will have to wait until the lock
+is released by T2
+
+Problem 1-7(write/read locks)
+T1 ex[A]
+T2 sh[C]
+T3 --[]
+T4 --[]
+T5 --[]
+T6 --[]
+unlocked items: B,D
+
+T1 ex[A] can both read and write, it is an educated transaction, joking.
+
+Problem 1-8
+T2 sh[C] can only read the data.
+
+Problem 1-9
+T3 --[] => T3 ex[D]
+T3 obtains a lock for data D without waiting.
+
+Problem 1-10
+T4 --[] => T4 sh[C]
+T4 obtains a shared lock immediately and now
+T4 and T2 both have a reading lock.
+
+Problem 1-11
+T5 --[]  =\=> T5 ex[C]
+T5 requests a write lock on element C but has to
+wait for T2 and T4 to free up their shared lock,
+furthermore T5 has to wait for others that obtain
+a read lock before it is free of all shared locks 
+for T5 to write.
+
+Problem 1-12
+T6 --[] => T6 sh[B]
+T6 requests a shared lock on data B and immediately 
+receives with virtually no wait time.
+
+Final State
+T1 ex[A]
+T2 sh[C]
+T3 ex[D]
+T4 sh[C]
+T5 --[] waiting for ex[C]
+T6 --[B]
+unlocked items: ...
+
+
+

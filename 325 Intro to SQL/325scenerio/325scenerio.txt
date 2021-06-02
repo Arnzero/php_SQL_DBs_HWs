@@ -1,0 +1,63 @@
+-- Adrian Haro
+-- Last Modified 09/20/19
+
+--Note: I have 2 suggested project ideas
+--            The first one is preferred.
+
+
+Project consideration 1: Happy Humboldt Plant Based is your local market
+ for healthy food choices. Fill up your nutritional needs to make sure
+ you are getting the requirements needed to prepare for your daily life
+ tasks. The store where people smile at the list of ingredients knowing
+ you are fulfilling your doctoral recommendation needs. With so much
+ on-going science about food come rediscover what “real” food can do
+ for you. (can be improved).
+
+At least 5 example questions for chosen scenario
+What is the shelf life of product x?
+What is the price per weight of product y?
+What is the recommended daily intake on z ingredient for p RDI?
+Which products  M..N are free from allergies y..x?
+Which products N..M are  x color ?
+What is the origin of product p ?
+What is the top benefit(anti-scurvy) for product P?
+
+At least 3 business rules
+All products r expiring within 1 week will be removed and logged weekly.
+All products b expiring within 2 weeks will have prices reduced & logged weekly.
+All products x with an allergy must be labeled explicitly.
+All sales are final, cannot refund for any product.
+
+
+-- End of consideration 1
+
+Project consideration 2: Birdwatching Buddies (No variation but copied
+ for future reference)!!!
+
+Scenario: This group of avid birdwatchers is committed both to building
+ their life lists as well as doing all they can to protect the natural
+ habitats of birds. They volunteer to help with a variety of local area
+ clean-ups, and also work with local research projects, happily taking
+ readings and measurements. They have regular social get-togethers,
+ with guest speakers on a variety of bird- and bird-habitat-related
+ topics. They also plan bird-watching trips, and events tied in to 
+Godwit Days. Examples of reasonable variations: can definitely
+ improve on the name; can modify the above to actually reflect
+ how a birdwatching group or natural resources project would work;
+ can modify for a different type of natural-resources-based activity
+
+
+5 example questions:
+How many x volunteers on y date?
+How much y volunteer time on p date?
+What o birds are found in location L?
+How many x birdwatching trips in year m?
+What was the F temperature on day D?
+
+3 business rules:
+-- A birdwatching trip must have at least 2 expert leaders and 4
+	 volunteers or members per activity (clean up and/or birdwatching).
+-- No activity can be longer than 5 hours per day.
+-- Groups must be divided into pairs and any odd one joins a pair.
+-- All damaged equipment must be reported.
+

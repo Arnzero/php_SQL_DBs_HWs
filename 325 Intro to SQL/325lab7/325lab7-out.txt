@@ -1,0 +1,84 @@
+Subselect practice
+lab query 1
+project: empl_last_name, hiredate
+of lowest-paid employee with job title of 'Manager'
+
+EMPL_LAST_NAME  HIREDATE                                                        
+--------------- ---------                                                       
+Raimi           09-JUN-12                                                       
+
+lab query 2
+using subselect, project
+hiredates of the employees whose
+department location is New York
+
+HIREDATE                                                                        
+---------                                                                       
+17-NOV-11                                                                       
+09-JUN-12                                                                       
+23-JAN-16                                                                       
+
+lab query 3
+use subselect to project empl lname and hiredates
+for all employees hired after the last hired manager
+
+EMPL_LAST_NAME  HIREDATE                                                        
+--------------- ---------                                                       
+Michaels        20-FEB-18                                                       
+Ward            22-FEB-19                                                       
+Martin          28-SEP-18                                                       
+Scott           09-NOV-18                                                       
+Turner          08-SEP-19                                                       
+Adams           23-SEP-18                                                       
+James           03-DEC-17                                                       
+Miller          23-JAN-16                                                       
+
+8 rows selected.
+
+lab query 4
+project a single column with the format
+emplolyee_last_name - $empl_salary w. column alias "Employee Salaries"
+
+Employee Salaries                                                               
+-----------------------------------------------------------                     
+King - $5000                                                                    
+Jones - $2975                                                                   
+Blake - $2850                                                                   
+Raimi - $2450                                                                   
+Ford - $3000                                                                    
+Smith - $800                                                                    
+Michaels - $1600                                                                
+Ward - $1250                                                                    
+Martin - $1250                                                                  
+Scott - $3000                                                                   
+Turner - $1500                                                                  
+
+Employee Salaries                                                               
+-----------------------------------------------------------                     
+Adams - $1100                                                                   
+James - $950                                                                    
+Miller - $1300                                                                  
+
+14 rows selected.
+
+lab query 5
+use EXISTS predicate and correlated subquery
+to show the names ofdepartments of at least
+one employee making more than $3k salary
+
+DEPT_NAME                                                                       
+---------------                                                                 
+Research                                                                        
+Management                                                                      
+
+lab query 6
+use NOT EXISTS predicate and correlated subquery
+to show employee last names w/ job_title of
+sales for which there does NOT exist a customer
+they represent
+
+EMPL_LAST_NAME                                                                  
+---------------                                                                 
+Ward                                                                            
+Turner                                                                          
+

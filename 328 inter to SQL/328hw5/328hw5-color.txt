@@ -1,0 +1,17 @@
+Adrian Haro
+3/2/2020
+
+FIRST:
+   foreground color: #4F4F18
+   background color: #E0EEE8
+   brightness difference (>= 125): 160.39
+   color difference (>= 500): 512
+   contrast ratio: 7.128
+
+SECOND:
+   foreground color: #FCD4FF
+   background color: #4A2929
+   brightness difference: 177.99
+   color difference: 563
+   contrast ratio: 9.754
+

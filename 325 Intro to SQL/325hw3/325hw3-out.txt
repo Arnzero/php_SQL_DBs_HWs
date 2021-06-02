@@ -1,0 +1,78 @@
+Adrian Haro Problem 4
+SHOULD SUCCEED; first name NOT required
+
+1 row created.
+
+4b SHOULD FAIL; client needs phone
+insert into Client(Cli_id,Cli_lname)
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("AFH146"."CLIENT"."CLI_PHONE") 
+
+
+4c SHOULD FAIL; video needs legal format
+update Video
+*
+ERROR at line 1:
+ORA-02290: check constraint (AFH146.SYS_C001326118) violated 
+
+
+4d SHOULD SUCCEED;  demo of DEFAULT and more
+
+1 row created.
+
+4e SHOULD FAIL; no neg length
+insert into Video(Vid_id,Vid_format,Vid_purchase_date,Vid_rental_price,Vid_length)
+*
+ERROR at line 1:
+ORA-02290: check constraint (AFH146.SYS_C001326120) violated 
+
+
+4f deleting a record
+
+1 row deleted.
+
+4g updating a cell record
+
+1 row updated.
+
+4h select statements
+
+CLI_ CLI_LNAME  CLI_FNAME  CLI_PHONE                                            
+---- ---------- ---------- ------------                                         
+000A Alpha      Ann        000-0001                                             
+111B Beta       bob        111-1112                                             
+222B Beta       Ann        222-2223                                             
+333C Carlos     David      888-3838                                             
+444D Delta      Edie       111-1112                                             
+555F Jack       Lumber     121-2121                                             
+666E dover                 747-9090                                             
+
+7 rows selected.
+
+
+VID_ID VID_FO VID_PURCH VID_RENTAL_PRICE VID_LENGTH                             
+------ ------ --------- ---------------- ----------                             
+00000D DVD    10-JAN-18             1.99         73                             
+11111H HD-DVD 20-FEB-19             4.99         91                             
+22222B BluRay 30-MAR-17             1.99        105                             
+44444B BluRay 04-APR-15              .99         91                             
+55555B BluRay 30-MAR-19             3.99        102                             
+66666E HD-DVD 18-SEP-19             2.98                                        
+
+6 rows selected.
+
+
+CLI_ VID_ID                                                                     
+---- ------                                                                     
+000A 44444B                                                                     
+111B 11111H                                                                     
+222B 00000D                                                                     
+222B 22222B                                                                     
+333C 00000D                                                                     
+333C 11111H                                                                     
+333C 22222B                                                                     
+555F 55555B                                                                     
+
+8 rows selected.
+

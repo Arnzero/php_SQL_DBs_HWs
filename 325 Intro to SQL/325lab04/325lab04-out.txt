@@ -1,0 +1,52 @@
+Adrian and Misael
+true relational projection
+
+DEP DEPT_LOC                                                                    
+--- ---------------                                                             
+100 New York                                                                    
+200 Dallas                                                                      
+300 Chicago                                                                     
+400 Boston                                                                      
+500 New York                                                                    
+
+true relational selection
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE                                      
+--------------- -- ---------- ------------                                      
+100001 Firstly              First           7499 1111 First Street              
+Fortuna         CA 95520           1111.11                                      
+                                                                                
+100002 Secondly             Second          7654 2222 Second Street             
+McKinleyville   CA 95523             222.2                                      
+                                                                                
+
+true relational equi-join
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  
+--------------- -- ---------- ------------ ---- --------------- ---------- ---- 
+HIREDATE      SALARY COMMISSION DEP                                             
+--------- ---------- ---------- ---                                             
+100001 Firstly              First           7499 1111 First Street              
+Fortuna         CA 95520           1111.11 7499 Michaels        Sales      7698 
+20-FEB-18       1600        300 300                                             
+                                                                                
+100002 Secondly             Second          7654 2222 Second Street             
+McKinleyville   CA 95523             222.2 7654 Martin          Sales      7698 
+28-SEP-18       1250       1400 300                                             
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  
+--------------- -- ---------- ------------ ---- --------------- ---------- ---- 
+HIREDATE      SALARY COMMISSION DEP                                             
+--------- ---------- ---------- ---                                             
+                                                                                
+100003 Thirdly              Third           7499 333 Third Street               
+Arcata          CA 95519-1234            0 7499 Michaels        Sales      7698 
+20-FEB-18       1600        300 300                                             
+                                                                                
+

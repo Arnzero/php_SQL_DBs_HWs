@@ -1,0 +1,49 @@
+Adrian Haro
+5/3/2020
+
+Three important take-aways from:
+	https://owasp.org/www-community/attacks/xss/#stored-and-reflected-xss-attacks
+
+	1) Rule#0:
+		Deny all - don't put untrusted data into HTML
+		unless it is within slots defined in Rule#1 to #5.
+		DO NOT PUT UNTRUSTED DATA WITHIN:
+			-script tags <script> </script>
+			-HTML comment <!-- -->
+			-attribute name <div x=text />
+			-tag name <x href="/test">
+			-CSS directly <style> </style>
+			But most importantly is never accept actual JS
+			    from an untrusted source and then run it.
+	2) Rule#1
+		HTML Escape Before Inserting Untrusted Data Into
+			HTML Element Content
+		For normal tags like; div, p, td, etc. Escape the
+		  following characters with HTML entity encoding
+		  to prevent switching into any execution context
+		  such as script, style or event handlers.
+		& --> &amp;
+ 		< --> &lt;
+		 > --> &gt;
+		 " --> &quot;
+		 ' --> &#x27;     
+		 / --> &#x2F;
+	
+	3) Rule#2 
+		Attribute Escape Before Inserting Untrusted Data
+		  into HTML common Attributes
+		Examples include = {width, name, value, etc} and 
+		  not { href, src, style or any event 
+		  handlers like onmouseover }
+		<div attr= ...ESCAPE INPUT DATA HERE ...> content
+		<div attr= '...ESCAPE INPUT DATA HERE ...'> content
+		<div attr= "...ESCAPE INPUT DATA HERE ..."> content
+		
+		Except for alphanumeric chars, escape all ASCII chars
+		  values less than 256 with &#xHH; format
+		  to prevent switching out of the attribute
+		Properly quoted attributes can only be escaped with
+		  corresponding quote.
+		Unquoted attributes can be broken out of with many
+		  chars include [space] and {% * + , - / ; < = > % | }
+

@@ -1,0 +1,46 @@
+Adrian Haro and Misael Munoz
+
+Trigger created.
+
+Success! Customer in Sales Verified                                             
+
+1 row created.
+
+insert into customer(cust_id, cust_lname, empl_rep)
+            *
+ERROR at line 1:
+ORA-20000: error, not in Sales 
+ORA-06512: at "AFH146.CK_EMPL_REP", line 11 
+ORA-04088: error during execution of trigger 'AFH146.CK_EMPL_REP' 
+
+
+Success! Customer in Sales Verified                                             
+
+1 row updated.
+
+
+0 rows updated.
+
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE                                      
+--------------- -- ---------- ------------                                      
+100001 Firstly              First           7499 1111 First Street              
+Fortuna         CA 95520           1111.11                                      
+                                                                                
+100002 Secondly             Second          7654 2222 Second Street             
+McKinleyville   CA 95523             222.2                                      
+                                                                                
+100003 Thirdly              Third           7499 333 Third Street               
+Arcata          CA 95519-1234            0                                      
+                                                                                
+
+CUST_I CUST_LNAME           CUST_FNAME      EMPL CUST_STREET                    
+------ -------------------- --------------- ---- ------------------------------ 
+CUST_CITY       CU CUST_ZIP   CUST_BALANCE                                      
+--------------- -- ---------- ------------                                      
+666666 Gomez                George          7499                                
+                                         0                                      
+                                                                                
+

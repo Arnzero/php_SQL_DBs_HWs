@@ -1,0 +1,11 @@
+Adrian Haro
+CS 325 - Homework 3 - Problem 2
+Last Modified: 09/16/19
+
+Client(CLI_ID, Cli_lname, Cli_fname, Cli_phone)
+
+Video(VID_ID, Vid_format, Vid_purchase_date, Vid_rental_price, Vid_length)
+
+Rental(Cli_id, Vid_id)
+      foreign key(CLI_ID) references Client(CLI_ID)
+      foreign key(VID_ID) references Video(VID_ID)

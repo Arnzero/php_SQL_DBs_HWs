@@ -1,0 +1,186 @@
+MIsael Munoz and Adrian Haro
+lab problem 1
+
+NAME            DAY                                                             
+--------------- ------------------------------------                            
+King            THURSDAY                                                        
+Jones           MONDAY                                                          
+Blake           WEDNESDAY                                                       
+Raimi           SATURDAY                                                        
+Ford            MONDAY                                                          
+Smith           MONDAY                                                          
+Michaels        TUESDAY                                                         
+Ward            FRIDAY                                                          
+Martin          FRIDAY                                                          
+Scott           FRIDAY                                                          
+Turner          SUNDAY                                                          
+
+NAME            DAY                                                             
+--------------- ------------------------------------                            
+Adams           SUNDAY                                                          
+James           SUNDAY                                                          
+Miller          SATURDAY                                                        
+
+14 rows selected.
+
+lab problem 2
+
+NAME                                                                            
+----------------                                                                
+KING                                                                            
+JONE                                                                            
+BLAK                                                                            
+RAIM                                                                            
+FORD                                                                            
+SMIT                                                                            
+MICH                                                                            
+WARD                                                                            
+MART                                                                            
+SCOT                                                                            
+TURN                                                                            
+
+NAME                                                                            
+----------------                                                                
+ADAM                                                                            
+JAME                                                                            
+MILL                                                                            
+
+14 rows selected.
+
+lab problem 3
+
+EMPL_LAST_NAME  HIREDATE  ELIG_DATE                                             
+--------------- --------- ---------                                             
+King            17-NOV-11 17-MAY-12                                             
+Jones           02-APR-12 02-OCT-12                                             
+Blake           01-MAY-13 01-NOV-13                                             
+Raimi           09-JUN-12 09-DEC-12                                             
+Ford            03-DEC-12 03-JUN-13                                             
+Smith           17-DEC-12 17-JUN-13                                             
+Michaels        20-FEB-18 20-AUG-18                                             
+Ward            22-FEB-19 22-AUG-19                                             
+Martin          28-SEP-18 28-MAR-19                                             
+Scott           09-NOV-18 09-MAY-19                                             
+Turner          08-SEP-19 08-MAR-20                                             
+
+EMPL_LAST_NAME  HIREDATE  ELIG_DATE                                             
+--------------- --------- ---------                                             
+Adams           23-SEP-18 23-MAR-19                                             
+James           03-DEC-17 03-JUN-18                                             
+Miller          23-JAN-16 23-JUL-16                                             
+
+14 rows selected.
+
+lab problem 4
+
+HIRETIME                                                                        
+----------                                                                      
+2011-11-17                                                                      
+2012-04-02                                                                      
+2013-05-01                                                                      
+2012-06-09                                                                      
+2012-12-03                                                                      
+2012-12-17                                                                      
+2018-02-20                                                                      
+2019-02-22                                                                      
+2018-09-28                                                                      
+2018-11-09                                                                      
+2019-09-08                                                                      
+
+HIRETIME                                                                        
+----------                                                                      
+2018-09-23                                                                      
+2017-12-03                                                                      
+2016-01-23                                                                      
+
+14 rows selected.
+
+
+NEXTWEDNE                                                                       
+---------                                                                       
+23-NOV-11                                                                       
+04-APR-12                                                                       
+08-MAY-13                                                                       
+13-JUN-12                                                                       
+05-DEC-12                                                                       
+19-DEC-12                                                                       
+21-FEB-18                                                                       
+27-FEB-19                                                                       
+03-OCT-18                                                                       
+14-NOV-18                                                                       
+11-SEP-19                                                                       
+
+NEXTWEDNE                                                                       
+---------                                                                       
+26-SEP-18                                                                       
+06-DEC-17                                                                       
+27-JAN-16                                                                       
+
+14 rows selected.
+
+
+NAME                                                                            
+---------------                                                                 
+KING                                                                            
+JONES                                                                           
+BLAKE                                                                           
+RAIMI                                                                           
+FORD                                                                            
+SMITH                                                                           
+MICHAELS                                                                        
+WARD                                                                            
+MARTIN                                                                          
+SCOTT                                                                           
+TURNER                                                                          
+
+NAME                                                                            
+---------------                                                                 
+ADAMS                                                                           
+JAMES                                                                           
+MILLER                                                                          
+
+14 rows selected.
+
+
+EMPL_LAST_NAME         LEN                                                      
+--------------- ----------                                                      
+King                     4                                                      
+Jones                    5                                                      
+Blake                    5                                                      
+Raimi                    5                                                      
+Ford                     4                                                      
+Smith                    5                                                      
+Michaels                 8                                                      
+Ward                     4                                                      
+Martin                   6                                                      
+Scott                    5                                                      
+Turner                   6                                                      
+
+EMPL_LAST_NAME         LEN                                                      
+--------------- ----------                                                      
+Adams                    5                                                      
+James                    5                                                      
+Miller                   6                                                      
+
+14 rows selected.
+
+lab problem 5
+
+Trigger created.
+
+No errors.
+
+Commit complete.
+
+Deleting Michaels                                                               
+Deleting Martin                                                                 
+Deleting Michaels                                                               
+
+3 rows deleted.
+
+
+no rows selected
+
+
+Rollback complete.
+

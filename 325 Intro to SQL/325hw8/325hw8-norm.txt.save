@@ -1,0 +1,26 @@
+--Adrian Haro
+--11/3/19
+
+--Problem 4a (normalizing into 1NF)
+Choc_Bar_Type(BAR_ID, bar_brand, bar_name, bar_cacao_pct,
+
+Bar_sizes(BAR_ID, BAR_SIZE_AVLBL)
+foreign key(BAR_ID) references Choc_Bar_Type
+
+--Problem 4b
+
+Student(STU_ID,stu_lname, stu_primary_email)
+Class_Course(COURSE_SECT_ID, course_num, course_name, course_num_units)
+Stu_Class_Info(STU_ID, COURSE_SECT_ID, reg_date, final_grade)
+	foreign key(stu_id) references Student
+	foreign key(course_sect_id) references Class_Course
+
+--Problem 4c (Normalizing 3rd Form)
+
+Symphony(SYMPH_ID, symph_title, symph_year_completed, composer_id,
+	  music_period_id)
+	 foreign key(composer_id) references Composer
+	 foreign key(music_period_id) references Music_Period
+
+Music_Period(MUSIC_PERIOD_ID, music_period_name, music_period_year_begins)
+	 

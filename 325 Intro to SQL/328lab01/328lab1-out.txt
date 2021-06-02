@@ -1,0 +1,8 @@
+Adrian Haro
+
+DEP DEPT_NAME       DEPT_LOC                                                    
+--- --------------- ---------------                                             
+100 Accounting      New York                                                    
+200 Research        Dallas                                                      
+300 Sales           Chicago                                                     
+

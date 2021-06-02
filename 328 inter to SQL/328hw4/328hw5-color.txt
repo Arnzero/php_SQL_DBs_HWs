@@ -1,0 +1,14 @@
+Adrian Haro
+3/2/2020
+
+At least 2 WCAG 2 AA compliant foreground and background color combo choice:
+FIRST:
+   foreground: #E1DDEE
+   background: #5F2131
+   brightness difference(>= 125): 170.77
+   contrast ratio: 9.024
+SECOND:
+   foreground: #4009DD
+   background: #EACB0F
+   brightness difference(>= 125): 141.22
+   contrast ratio: 5.67

@@ -1,0 +1,165 @@
+Homework 6 Problem 2
+Adrian Haro
+
+Problem 2-1
+project average video rental price
+
+AVG(VID_RENTAL_PRICE)                                                           
+---------------------                                                           
+           3.15190476                                                           
+
+Problem 2-2
+Use Subselect to project video_ids and video_format
+that have rental price less than average video
+rental price W/O join or cartesian prod operations
+
+
+VID_ID VID_FOR                                                                  
+------ -------                                                                  
+120011 Blu-Ray                                                                  
+120021 Blu-Ray                                                                  
+130061 DVD                                                                      
+210011 HD-DVD                                                                   
+220013 Blu-Ray                                                                  
+220021 Blu-Ray                                                                  
+320011 Blu-Ray                                                                  
+320021 Blu-Ray                                                                  
+320022 Blu-Ray                                                                  
+320031 Blu-Ray                                                                  
+320032 Blu-Ray                                                                  
+
+VID_ID VID_FOR                                                                  
+------ -------                                                                  
+210031 HD-DVD                                                                   
+220032 Blu-Ray                                                                  
+210041 HD-DVD                                                                   
+220042 Blu-Ray                                                                  
+220051 Blu-Ray                                                                  
+220061 Blu-Ray                                                                  
+220062 Blu-Ray                                                                  
+220063 Blu-Ray                                                                  
+420011 Blu-Ray                                                                  
+420021 Blu-Ray                                                                  
+420031 Blu-Ray                                                                  
+
+VID_ID VID_FOR                                                                  
+------ -------                                                                  
+120041 Blu-Ray                                                                  
+120051 Blu-Ray                                                                  
+410041 HD-DVD                                                                   
+420042 Blu-Ray                                                                  
+220071 Blu-Ray                                                                  
+220072 Blu-Ray                                                                  
+
+28 rows selected.
+
+Problem 2-3
+Use Subselect W/O join's or cartesian prod oper..
+project last/first names only for clients
+who rented video ID '130012'
+
+CLIENT_LNAME    CLIENT_FNAME                                                    
+--------------- ---------------                                                 
+Beta            Bob                                                             
+Carlos          Ann                                                             
+Epsilon         Emma                                                            
+
+Problem 2-4
+project 1 column w/ column alias "Movie: Rating"
+showing each movie; title: rating
+
+Movie: Rating                                                                   
+-----------------------------------------------                                 
+Gone with the Wind: G                                                           
+It's a Wonderful Life: G                                                        
+The Muppet Movie: G                                                             
+Indiana Jones and the Temple of Doom: PG                                        
+Indiana Jones and the Last Crusade: PG-13                                       
+Babe: G                                                                         
+Toy Story: G                                                                    
+Toy Story 2: G                                                                  
+Star Wars: PG                                                                   
+The Empire Strikes Back: PG                                                     
+Return of the Jedi: PG                                                          
+
+Movie: Rating                                                                   
+-----------------------------------------------                                 
+The Phantom Menace: PG                                                          
+One Flew Over the Cuckoo's Nest: R                                              
+Midnight Cowboy: A                                                              
+Clockwork Orange: A                                                             
+All About Eve: G                                                                
+The Philadelphia Story: G                                                       
+Fatal Attraction: R                                                             
+The Matrix: R                                                                   
+The Blues Brothers: R                                                           
+
+20 rows selected.
+
+Problem 2-5
+Project 2 columns; Movies and Date
+and directors last name
+
+Movies                                          Directors                       
+----------------------------------------------- ------------------------------  
+Gone with the Wind (1939)                       Fleming                         
+It's a Wonderful Life (1947)                    Capra                           
+The Muppet Movie (1979)                         Frawley                         
+Indiana Jones and the Temple of Doom (1984)     Spielberg                       
+Indiana Jones and the Last Crusade (1989)       Spielberg                       
+Babe (1995)                                     Noonan                          
+Toy Story (1995)                                Lasseter                        
+Toy Story 2 (1999)                              Lasseter                        
+Star Wars (1977)                                Lucas                           
+The Empire Strikes Back (1980)                  Kershner                        
+Return of the Jedi (1983)                       Marquand                        
+
+Movies                                          Directors                       
+----------------------------------------------- ------------------------------  
+The Phantom Menace (1999)                       Lucas                           
+One Flew Over the Cuckoo's Nest (1975)          Forman                          
+Midnight Cowboy (1969)                          Schlesinger                     
+Clockwork Orange (1971)                         Kubrick                         
+All About Eve (1950)                            Mankiewicz                      
+The Philadelphia Story (1940)                   Cukor                           
+Fatal Attraction (1987)                         Lyne                            
+The Matrix (1999)                               Wachowski                       
+The Blues Brothers (1980)                       Landis                          
+
+20 rows selected.
+
+Problem 2-6
+project movie titles of movies that have
+earliest video purchase date
+
+MOVIE_TITLE                                                                     
+----------------------------------------                                        
+Indiana Jones and the Temple of Doom                                            
+Babe                                                                            
+Indiana Jones and the Last Crusade                                              
+
+Problem 2-7
+Using Exists project all Clients
+who have a current rental in DB
+use correlation?
+
+CLIENT_LNAME    CLIENT_FNAME    CLIENT_P                                        
+--------------- --------------- --------                                        
+Alpha           Ann             111-1111                                        
+Beta            Bob             222-2222                                        
+Carlos          Ann             333-3333                                        
+Beta            Edie            555-5555                                        
+Epsilon         Emma            666-6666                                        
+Greta           Gail            888-8888                                        
+
+6 rows selected.
+
+Problem 2-8
+Using NOT EXISTS project titles of movies
+for video sans format Blu-Ray
+
+MOVIE_TITLE                                                                     
+----------------------------------------                                        
+The Muppet Movie                                                                
+The Blues Brothers                                                              
+

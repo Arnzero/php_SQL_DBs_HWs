@@ -1,0 +1,34 @@
+--Adrian Haro
+-- 1-30-2020
+-- Relational Structure for design-bks
+-- HW1 Problem 2
+
+Publisher(PUB_ID, pub_name, pub_city, pub_state, pub_min_for_disc,
+		pub_disc_pct)
+
+Title(TTL_ISBN, ttl_name, ttl_auth_lname, ttl_cost, ttl_price,
+	ttl_qty, ttl_order_point, ttl_auto_order_qty, pub_id)
+      foreign key(pub_id) references Publisher
+
+Order_stock(ORD_NUM,ORD_LINE_NUM, ttl_isbn, ord_line_qty) 
+      foreign key(ord_num) references Order_stock,
+      foreign key(ttl_isbn) references Title
+
+Order_line_item(ORD_NUM, ORD_LINE_NUM, ttl_isbn, ord_line_qty)
+      foreign key(ord_num) references Order_stock
+      foreign key(ttl_isbn) references Title
+
+Order_receipt(ORD_RECEIPT_ID, ord_num, ord_line_num, qty_rcvd,
+		ord_rec_date)
+      foreign key(ord_num, ord_line_num references Order_line_item
+
+Order_needed(ORD_NEEDED_ID, ttl_isbn, qty_desired, date_need_noted,
+		ord_num)
+      foreign key(ord_num) references Order_stock,
+      foreign key(ttl_isbn) references Title
+
+Sale(SALE_NUM, sale date)
+
+Sale_line_item(SALE_NUM, SALE_LINE_NUM, sale_line_qty, ttl_isbn)
+      foreign key(sale_num) references Sale
+      foreign key(ttl_isbn) references Title

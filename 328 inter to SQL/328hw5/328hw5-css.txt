@@ -1,0 +1,24 @@
+Adrian Haro
+3/2/2020
+
+
+1 part a
+   <link href="my-fave.css" type="text/css" rel="stylesheet" />
+
+1 part b
+   the 'head' element where we store our meta data
+
+1 part c
+   the 'link' element to normalize has to come
+	before  the element in the HTML for 
+		our own CSS
+
+1 part d
+   'em' and '%' are preferred since it relative works
+	with the browser as opposed to 'px' or 'pts'
+
+1 part e
+   HTML forms should not use the 'table' element for
+   layout purposes, CSS should be used for such layout
+   instead. The 'table' element should be only used for
+   truly-tabular data.

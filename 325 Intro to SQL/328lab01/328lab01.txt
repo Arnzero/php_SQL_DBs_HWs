@@ -1,0 +1,11 @@
+* make a script 328lab.sql
+  * a comment including your name and
+      CS 328 - Week 1 Lab
+
+  * start spooling to 328lab1-out.txt
+  * write a prompt command outputting your name
+  * write a relational selection of the dept table
+  * stop spooling 
+  * save your script,
+    run it in sqlplus,
+    submit your TWO files using ~st10/328submit, lab # 81

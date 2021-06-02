@@ -1,0 +1,108 @@
+SQL> prompt Adrian Haro
+Adrian Haro
+SQL> prompt BEFORE GRANT:
+BEFORE GRANT:
+SQL> SELECT *
+  2  from st10.painter;
+from st10.painter
+          *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+SQL> prompt AFTER GRANT:
+AFTER GRANT:
+SQL> Select *
+  2  from st10.painter;
+
+   PTR_NUM PTR_LNAME                      PTR_FNAME                             
+---------- ------------------------------ ---------------                       
+       100 Van Gogh                       Vincent                               
+       101 Monet                          Claude                                
+       102 Da Vinci                       Leonardo                              
+       103 Cassatt                        Mary                                  
+
+SQL> prompt AFTER INSERT:
+AFTER INSERT:
+SQL> insert into st10.painter
+  2  values
+  3  (913, 'Joe', 'Rogan');
+
+1 row created.
+
+SQL> select *
+  2  from st10.painter;
+
+   PTR_NUM PTR_LNAME                      PTR_FNAME                             
+---------- ------------------------------ ---------------                       
+       100 Van Gogh                       Vincent                               
+       101 Monet                          Claude                                
+       102 Da Vinci                       Leonardo                              
+       103 Cassatt                        Mary                                  
+       913 Joe                            Rogan                                 
+
+SQL> prompt AFTER tuttle committed:
+AFTER tuttle committed:
+SQL> commit;
+
+Commit complete.
+
+SQL> select *
+  2  from st10.painter;
+
+   PTR_NUM PTR_LNAME                      PTR_FNAME                             
+---------- ------------------------------ ---------------                       
+       165 Wenzel                         David                                 
+       110 Devill                         Mark                                  
+       114 Banksy                         Mr.                                   
+       100 Van Gogh                       Vincent                               
+       101 Monet                          Claude                                
+       102 Da Vinci                       Leonardo                              
+       103 Cassatt                        Mary                                  
+       111 Leonardo                       DiCaprio                              
+       287 Picasso                        Pablo                                 
+       142 Greco                          El                                    
+       107 Frida                          Kahlo                                 
+
+   PTR_NUM PTR_LNAME                      PTR_FNAME                             
+---------- ------------------------------ ---------------                       
+         7 Van Gogh                       Scream                                
+       678 Roath                          William                               
+       246 Picasso                        Pablo                                 
+       328 picasso                        pablo                                 
+       168 Monkey                         Jesse                                 
+       113 Philip                         Toulinov                              
+       999 Warhol                         Andy                                  
+       189 Nord                           Jimmie                                
+       134 McDonald                       Ronald                                
+       104 Manet                          Edouard                               
+       707 LaPalme                        Amanda                                
+
+   PTR_NUM PTR_LNAME                      PTR_FNAME                             
+---------- ------------------------------ ---------------                       
+       913 Joe                            Rogan                                 
+      1738 Fetty                          wap                                   
+       417 Seamus                         Begley                                
+
+25 rows selected.
+
+SQL> prompt DELETE ATTEMPT:
+DELETE ATTEMPT:
+SQL> delete from st10.painter;
+delete from st10.painter
+                 *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+SQL> prompt AFTER REVOKE:
+AFTER REVOKE:
+SQL> select *
+  2  from st10.painter;
+from st10.painter
+          *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+SQL> spool off
